@@ -18,11 +18,10 @@
 #include "queue.h"
 #include "semphr.h"
 #include "ai_platform.h"
-//#include "stai.h"
 
 #define MODEL_INPUT_SIZE     AI_NETWORK_IN_1_SIZE
 
-#define SAMPLE_RATE_MS       2  // 1ms = 1000Hz sampling
+#define SAMPLE_RATE_MS       1  // 1ms = 1000Hz sampling
 
 /* ADC and UART handles */
 extern ADC_HandleTypeDef hadc1;
@@ -53,60 +52,6 @@ static ai_buffer *out_bufs = NULL;
 // Use generated weights and activations tables
 extern ai_handle g_network_weights_table[];
 extern ai_handle g_network_activations_table[];
-
-
-
-/* AI buffer definitions */
-//static ai_buffer ai_input[AI_NETWORK_IN_NUM] = {
-//    AI_BUFFER_OBJ_INIT(
-//    	STAI_FORMAT_FLOAT32,  // format_
-//        1,						//h_
-//		MODEL_INPUT_SIZE,		//w_
-//        1,						//ch_
-//        1,						//n_batches_
-//		ai_input_buffer      // data_
-//    )
-//};
-
-
-
-//static ai_buffer ai_output[AI_NETWORK_OUT_NUM] = {
-//    AI_BUFFER_OBJ_INIT(
-//    	AI_NETWORK_IN_1_FORMAT,  // format_
-//        1,                    // h_ (height: 1)
-//        1,                    // w_ (width: 1)
-//        1,                    // ch_ (channels: 1)
-//        1,                    // n_batches_ (batch size: 1)
-//		NULL      // data_
-//    )
-//};
-
-//static ai_buffer ai_input[AI_NETWORK_IN_NUM] = {
-//  AI_BUFFER_INIT(
-//    AI_FLAG_NONE,                        // flags
-//    AI_NETWORK_IN_1_FORMAT,              // format
-//    //AI_SHAPE_BCWH(                       // shape = [batch, channel, width, height]
-////      1,                                 // batches
-////      AI_NETWORK_IN_1_CHANNEL,           // channels
-////      AI_NETWORK_IN_1_HEIGHT,            // width (1000)
-////      1                                  // height (always 1 for a 1×1000 vector)
-////    ),
-//	AI_BUFFER_SHAPE_INIT(AI_SHAPE_BCWH, 4, (1), AI_NETWORK_IN_1_CHANNEL, AI_NETWORK_IN_1_HEIGHT, (1)),
-//    AI_NETWORK_IN_1_SIZE,                // total elements = 1000
-//    NULL,                                // meta_info
-//    NULL                                 // data pointer (bind at runtime)
-//  )
-//};
-//static ai_buffer ai_output[AI_NETWORK_OUT_NUM] = {
-//  AI_BUFFER_INIT(
-//    AI_FLAG_NONE,
-//    AI_NETWORK_OUT_1_FORMAT,
-//	AI_BUFFER_SHAPE_INIT(AI_SHAPE_BCWH, 4, (1), AI_NETWORK_OUT_1_CHANNEL, AI_NETWORK_OUT_1_SIZE, (1)),
-//    AI_NETWORK_OUT_1_SIZE,
-//    NULL,
-//    NULL
-//  )
-//};
 
 
 /* Statistics functions */
@@ -186,25 +131,7 @@ static void InitAI(void) {
         );
         HAL_UART_Transmit(&huart3, (uint8_t*)dbg, strlen(dbg), HAL_MAX_DELAY);
 
-//    // point to your C arrays, and tell the SDK exactly how many bytes:
-//    ai_input[0].data  = AI_HANDLE_PTR(ai_input_buffer);
-//    ai_input[0].size = info.inputs[0].size;
-//    //ai_input[0].shape.n_dims = 4;  // <--- ADD THIS
-//
-//    ai_output[0].data = AI_HANDLE_PTR(ai_output_buffer);
-//    ai_output[0].size = info.outputs[0].size;
-//    //ai_output[0].shape.n_dims = 4;  // <--- ADD THIS
-//
-//    char buf[64];
-//            snprintf(buf, sizeof(buf),"Model expects %lu elements at input[0] (f32)\n",
-//                    info.inputs[0].size);
-//            HAL_UART_Transmit(&huart3, (uint8_t*)buf, strlen(buf), HAL_MAX_DELAY);
-//            snprintf(buf, sizeof(buf), "ai_input.shape: n_batches=%lu, ch=%lu, w=%lu, h=%lu\r\n",
-//                   ai_input[0].shape.data[0],
-//                   ai_input[0].shape.data[1],
-//                   ai_input[0].shape.data[2],
-//                   ai_input[0].shape.data[3]);
-//            HAL_UART_Transmit(&huart3, (uint8_t*)buf, strlen(buf), HAL_MAX_DELAY);
+
 
 }
 
@@ -269,7 +196,7 @@ void ECGSamplingTask(void *argument) {
             __DSB();  // Data synchronization barrier
             __ISB();  // Instruction synchronization barrier
             ai_i32 ret = ai_network_run(ecg_network, in_bufs, out_bufs);
-//            ai_i32 ret = ai_network_run(ecg_network, ai_input, ai_output);
+
             if (ret == AI_NETWORK_OUT_NUM) {
             	ai_float yq = ai_output_buffer[0];
 
@@ -307,7 +234,6 @@ void ECGSamplingTask(void *argument) {
             sampleCount = 0;
             MonitorHeap();
         }
-//        vTaskDelay(pdMS_TO_TICKS(100));
     }
 }
 
