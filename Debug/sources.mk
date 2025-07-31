@@ -41,7 +41,7 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Drivers/STM32H5xx_HAL_Driver/Src \
-Middleware/ecg_anomaly_detector \
+Middleware/ecg_anomaly_detector_updated \
 ThirdParty/FreeRTOS \
 ThirdParty/FreeRTOS/portable/GCC/ARM_CM33_NTZ/non_secure \
 ThirdParty/FreeRTOS/portable/MemMang \

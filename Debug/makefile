@@ -12,7 +12,7 @@ RM := rm -rf
 -include ThirdParty/FreeRTOS/portable/MemMang/subdir.mk
 -include ThirdParty/FreeRTOS/portable/GCC/ARM_CM33_NTZ/non_secure/subdir.mk
 -include ThirdParty/FreeRTOS/subdir.mk
--include Middleware/ecg_anomaly_detector/subdir.mk
+-include Middleware/ecg_anomaly_detector_updated/subdir.mk
 -include Drivers/STM32H5xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -89,7 +89,7 @@ main-build: Final_RT_Edge_Anomaly.elf secondary-outputs
 
 # Tool invocations
 Final_RT_Edge_Anomaly.elf Final_RT_Edge_Anomaly.map: $(OBJS) $(USER_OBJS) D:\STM_Workspace_1.19\Final_RT_Edge_Anomaly\STM32H563ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "Final_RT_Edge_Anomaly.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m33 -T"D:\STM_Workspace_1.19\Final_RT_Edge_Anomaly\STM32H563ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Final_RT_Edge_Anomaly.map" -Wl,--gc-sections -static -L"D:\STM_Workspace_1.19\Final_RT_Edge_Anomaly\Middleware\ecg_anomaly_detector\Lib" -u _printf_float --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+	arm-none-eabi-g++ -o "Final_RT_Edge_Anomaly.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m33 -T"D:\STM_Workspace_1.19\Final_RT_Edge_Anomaly\STM32H563ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Final_RT_Edge_Anomaly.map" -Wl,--gc-sections -static -L"D:\STM_Workspace_1.19\Final_RT_Edge_Anomaly\Middleware\ecg_anomaly_detector\Lib" -L"D:\STM_Workspace_1.19\Final_RT_Edge_Anomaly\Middleware\ecg_anomaly_detector_updated\Lib" -u _printf_float --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

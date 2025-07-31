@@ -47,14 +47,14 @@ Core/Src/Ecg_Driver_Manual.o: ../Core/Src/Ecg_Driver_Manual.c \
  D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/ThirdParty/FreeRTOS/include/task.h \
  D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/ThirdParty/FreeRTOS/include/semphr.h \
  D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/ThirdParty/FreeRTOS/include/queue.h \
- D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/Inc/ai_datatypes_defines.h \
- D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/Inc/ai_platform.h \
- D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/Inc/core_assert.h \
- D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/network.h \
- D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/network_config.h \
- D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/Inc/ai_platform.h \
- D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/network_data.h \
- D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/network_data_params.h
+ D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/Inc/ai_datatypes_defines.h \
+ D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/Inc/ai_platform.h \
+ D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/Inc/core_assert.h \
+ D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/network.h \
+ D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/network_config.h \
+ D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/Inc/ai_platform.h \
+ D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/network_data.h \
+ D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/network_data_params.h
 ../Core/Inc/main.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal.h:
 ../Core/Inc/stm32h5xx_hal_conf.h:
@@ -104,11 +104,11 @@ D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/ThirdParty/FreeRTOS/include/queue.h:
 D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/ThirdParty/FreeRTOS/include/task.h:
 D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/ThirdParty/FreeRTOS/include/semphr.h:
 D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/ThirdParty/FreeRTOS/include/queue.h:
-D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/Inc/ai_datatypes_defines.h:
-D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/Inc/ai_platform.h:
-D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/Inc/core_assert.h:
-D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/network.h:
-D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/network_config.h:
-D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/Inc/ai_platform.h:
-D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/network_data.h:
-D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector/network_data_params.h:
+D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/Inc/ai_datatypes_defines.h:
+D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/Inc/ai_platform.h:
+D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/Inc/core_assert.h:
+D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/network.h:
+D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/network_config.h:
+D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/Inc/ai_platform.h:
+D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/network_data.h:
+D:/STM_Workspace_1.19/Final_RT_Edge_Anomaly/Middleware/ecg_anomaly_detector_updated/network_data_params.h:

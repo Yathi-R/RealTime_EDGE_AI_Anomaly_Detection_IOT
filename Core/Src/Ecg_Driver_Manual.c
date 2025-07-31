@@ -18,6 +18,7 @@
 #include "queue.h"
 #include "semphr.h"
 #include "ai_platform.h"
+//#include "stai.h"
 
 #define MODEL_INPUT_SIZE     AI_NETWORK_IN_1_SIZE
 
@@ -131,7 +132,25 @@ static void InitAI(void) {
         );
         HAL_UART_Transmit(&huart3, (uint8_t*)dbg, strlen(dbg), HAL_MAX_DELAY);
 
-
+//    // point to your C arrays, and tell the SDK exactly how many bytes:
+//    ai_input[0].data  = AI_HANDLE_PTR(ai_input_buffer);
+//    ai_input[0].size = info.inputs[0].size;
+//    //ai_input[0].shape.n_dims = 4;  // <--- ADD THIS
+//
+//    ai_output[0].data = AI_HANDLE_PTR(ai_output_buffer);
+//    ai_output[0].size = info.outputs[0].size;
+//    //ai_output[0].shape.n_dims = 4;  // <--- ADD THIS
+//
+//    char buf[64];
+//            snprintf(buf, sizeof(buf),"Model expects %lu elements at input[0] (f32)\n",
+//                    info.inputs[0].size);
+//            HAL_UART_Transmit(&huart3, (uint8_t*)buf, strlen(buf), HAL_MAX_DELAY);
+//            snprintf(buf, sizeof(buf), "ai_input.shape: n_batches=%lu, ch=%lu, w=%lu, h=%lu\r\n",
+//                   ai_input[0].shape.data[0],
+//                   ai_input[0].shape.data[1],
+//                   ai_input[0].shape.data[2],
+//                   ai_input[0].shape.data[3]);
+//            HAL_UART_Transmit(&huart3, (uint8_t*)buf, strlen(buf), HAL_MAX_DELAY);
 
 }
 
@@ -183,6 +202,11 @@ void ECGSamplingTask(void *argument) {
         // Store in buffer
         modelInputBuffer[sampleCount++] = centered;
 
+//        char uartBuffer[64];
+//        snprintf(uartBuffer, sizeof(uartBuffer), "Raw:%d, Voltage:%.2f\r\n", raw, voltage);
+//        HAL_UART_Transmit(&huart3, (uint8_t*)uartBuffer, strlen(uartBuffer), HAL_MAX_DELAY);
+
+
         // Process when buffer full
         if (sampleCount >= MODEL_INPUT_SIZE) {
             float dynamicMean = computeMean(modelInputBuffer, MODEL_INPUT_SIZE);
@@ -196,7 +220,7 @@ void ECGSamplingTask(void *argument) {
             __DSB();  // Data synchronization barrier
             __ISB();  // Instruction synchronization barrier
             ai_i32 ret = ai_network_run(ecg_network, in_bufs, out_bufs);
-
+//            ai_i32 ret = ai_network_run(ecg_network, ai_input, ai_output);
             if (ret == AI_NETWORK_OUT_NUM) {
             	ai_float yq = ai_output_buffer[0];
 
@@ -234,6 +258,7 @@ void ECGSamplingTask(void *argument) {
             sampleCount = 0;
             MonitorHeap();
         }
+//        vTaskDelay(pdMS_TO_TICKS(100));
     }
 }
 
