@@ -1,0 +1,3 @@
+../Core/Src/Ecg_Driver_Manual.c:128:6:MonitorHeap	2
+../Core/Src/Ecg_Driver_Manual.c:237:6:ECGSamplingTask	18
+../Core/Src/Ecg_Driver_Manual.c:315:6:ECGTask_Init	1

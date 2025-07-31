@@ -1,0 +1,11 @@
+../Middleware/ecg_anomaly_detector/network.c:788:9:ai_network_get_info	4
+../Middleware/ecg_anomaly_detector/network.c:835:9:ai_network_get_report	4
+../Middleware/ecg_anomaly_detector/network.c:882:10:ai_network_get_error	1
+../Middleware/ecg_anomaly_detector/network.c:889:10:ai_network_create	1
+../Middleware/ecg_anomaly_detector/network.c:935:12:ai_network_inputs_get	2
+../Middleware/ecg_anomaly_detector/network.c:946:12:ai_network_outputs_get	2
+../Middleware/ecg_anomaly_detector/network.c:957:11:ai_network_destroy	1
+../Middleware/ecg_anomaly_detector/network.c:964:9:ai_network_init	4
+../Middleware/ecg_anomaly_detector/network.c:900:10:ai_network_create_and_init	10
+../Middleware/ecg_anomaly_detector/network.c:981:8:ai_network_run	1
+../Middleware/ecg_anomaly_detector/network.c:989:8:ai_network_forward	1

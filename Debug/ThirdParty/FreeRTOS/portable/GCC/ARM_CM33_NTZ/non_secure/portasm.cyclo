@@ -1,0 +1,9 @@
+../ThirdParty/FreeRTOS/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c:121:10:vRestoreContextOfFirstTask	1
+../ThirdParty/FreeRTOS/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c:147:12:xIsPrivileged	1
+../ThirdParty/FreeRTOS/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c:164:6:vRaisePrivilege	1
+../ThirdParty/FreeRTOS/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c:179:6:vResetPrivilege	1
+../ThirdParty/FreeRTOS/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c:194:6:vStartFirstTask	1
+../ThirdParty/FreeRTOS/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c:215:10:ulSetInterruptMask	1
+../ThirdParty/FreeRTOS/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c:232:6:vClearInterruptMask	1
+../ThirdParty/FreeRTOS/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c:363:10:PendSV_Handler	1
+../ThirdParty/FreeRTOS/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c:455:10:SVC_Handler	1
