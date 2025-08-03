@@ -1,1 +1,0 @@
-Place your HiveMQ Enterprise Extension for Amazon Kinesis customizations here.
