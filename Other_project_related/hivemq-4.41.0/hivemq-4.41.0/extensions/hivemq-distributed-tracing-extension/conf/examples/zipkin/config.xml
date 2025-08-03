@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hivemq-distributed-tracing-extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                      xsi:noNamespaceSchemaLocation="config.xsd">
+
+    <service-name>HiveMQ Broker</service-name>
+
+    <propagators>
+        <propagator>b3</propagator>
+    </propagators>
+
+    <exporters>
+        <zipkin-exporter>
+            <id>my-zipkin-http-exporter</id>
+            <endpoint>http://localhost:9411/api/v2/spans</endpoint>
+        </zipkin-exporter>
+    </exporters>
+
+</hivemq-distributed-tracing-extension>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<enterprise-security-extension
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="config.xsd"
+        version="1">
+    <client-certificate-revocation-checks>
+        <client-certificate-revocation-check listener="ocsp-minimal">
+            <on-tls-handshake>
+                <method>
+                    <ocsp/>
+                </method>
+            </on-tls-handshake>
+        </client-certificate-revocation-check>
+
+        <client-certificate-revocation-check listener="crl-minimal">
+            <on-tls-handshake>
+                <method>
+                    <crl/>
+                </method>
+            </on-tls-handshake>
+        </client-certificate-revocation-check>
+
+        <client-certificate-revocation-check listener="ocsp-full">
+            <enabled>false</enabled>
+            <on-tls-handshake>
+                <method>
+                    <ocsp>
+                        <endpoint>https://ocsp-endpoint</endpoint>
+                        <crl-fallback/>
+                    </ocsp>
+                </method>
+                <soft-fail>true</soft-fail>
+            </on-tls-handshake>
+        </client-certificate-revocation-check>
+
+        <client-certificate-revocation-check listener="crl-full">
+            <enabled>false</enabled>
+            <on-tls-handshake>
+                <method>
+                    <crl>
+                        <ocsp-fallback>
+                            <endpoint>https://ocsp-endpoint</endpoint>
+                        </ocsp-fallback>
+                    </crl>
+                </method>
+                <soft-fail>true</soft-fail>
+            </on-tls-handshake>
+        </client-certificate-revocation-check>
+    </client-certificate-revocation-checks>
+</enterprise-security-extension>

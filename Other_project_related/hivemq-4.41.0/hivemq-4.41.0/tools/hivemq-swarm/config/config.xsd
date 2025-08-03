@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+
+    <xs:element name="swarm" type="swarm"/>
+
+    <xs:element name="http" type="http-listener"/>
+
+    <xs:element name="https" type="https-listener"/>
+
+    <xs:complexType name="swarm">
+        <xs:all>
+            <xs:element name="commander" minOccurs="0">
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="connectAttempts" minOccurs="0" default="5" type="xs:positiveInteger"/>
+                        <xs:element name="connectRetryInterval" minOccurs="0" default="5s" type="time"/>
+                        <xs:element name="mode" minOccurs="0" default="normal" type="commander-mode"/>
+                        <xs:element name="agents">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="agent" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="host" type="xs:string"/>
+                                                <xs:element name="port" type="xs:positiveInteger"/>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="agent" minOccurs="0">
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="bindAddress" type="xs:string" minOccurs="0" default="localhost"/>
+                        <xs:element name="bindPort" type="xs:positiveInteger"/>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="metrics" minOccurs="0">
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="influxDBHost" type="xs:string" minOccurs="0"/>
+                        <xs:element name="influxDB" type="xs:string" minOccurs="0"/>
+                        <xs:element name="influxDBPrefix" type="xs:string" minOccurs="0"/>
+                        <xs:element name="influxDBAuthString" type="xs:string" minOccurs="0"/>
+                        <xs:element name="influxDBTags" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="influxDBTag" minOccurs="0">
+                                        <xs:complexType>
+                                            <xs:all>
+                                                <xs:element name="key" type="xs:string"/>
+                                                <xs:element name="value" type="xs:string"/>
+                                            </xs:all>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="influxDBInterval" type="time" minOccurs="0" default="10s"/>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="rest" minOccurs="0">
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="enabled" type="xs:boolean" default="false" minOccurs="0"/>
+                        <xs:element name="listeners" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:choice maxOccurs="unbounded">
+                                        <xs:element ref="http"/>
+                                        <xs:element ref="https"/>
+                                    </xs:choice>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="http-listener">
+        <xs:all>
+            <xs:element name="enabled" type="xs:boolean" default="false" minOccurs="0"/>
+            <xs:element name="bindAddress" type="xs:string" default="0.0.0.0" minOccurs="0"/>
+            <xs:element name="bindPort" type="xs:positiveInteger" default="8080" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="https-listener">
+        <xs:all>
+            <xs:element name="enabled" type="xs:boolean" default="false" minOccurs="0"/>
+            <xs:element name="bindAddress" type="xs:string" default="0.0.0.0" minOccurs="0"/>
+            <xs:element name="bindPort" type="xs:positiveInteger" default="8181" minOccurs="0"/>
+            <xs:element name="tls">
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="keystore" minOccurs="0">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="path" type="xs:string"/>
+                                    <xs:element name="password" type="xs:string" default="" minOccurs="0"/>
+                                    <xs:element name="privateKeyPassword" type="xs:string" default="" minOccurs="0"/>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="truststore" minOccurs="0">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="path" type="xs:string"/>
+                                    <xs:element name="password" type="xs:string" default="" minOccurs="0"/>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:simpleType name="time">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]+(ms|s|m|h|d)"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="rate">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[1-9]([0-9])*/[1-9]([0-9])*(ms|s|m|h|d)"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="commander-mode">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="normal"/>
+            <xs:enumeration value="rest"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

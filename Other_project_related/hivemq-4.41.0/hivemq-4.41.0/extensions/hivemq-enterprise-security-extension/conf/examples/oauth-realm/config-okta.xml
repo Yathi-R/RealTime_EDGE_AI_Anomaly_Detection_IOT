@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<enterprise-security-extension
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="config.xsd"
+        version="1">
+
+    <realms>
+        <oauth-realm>
+            <name>okta</name>
+            <enabled>true</enabled>
+            <configuration>
+                <jwks-endpoint>https://[Okta Domain].okta.com/oauth2/default/v1/keys</jwks-endpoint>
+                <auth-endpoint>https://[Okta Domain].okta.com/oauth2/default/v1/authorize</auth-endpoint>
+                <token-endpoint>https://[Okta Domain].okta.com/oauth2/default/v1/token</token-endpoint>
+                <callback-uri>http://localhost:8080/callback</callback-uri>
+                <simple-auth>
+                    <username>[Okta Client ID]</username>
+                    <password>[Okta Client Secret]</password>
+                </simple-auth>
+            </configuration>
+        </oauth-realm>
+
+        <file-realm>
+            <name>file-provider</name>
+            <enabled>true</enabled>
+            <configuration>
+                <file-path>conf/ese-file-realm-okta.xml</file-path>
+            </configuration>
+        </file-realm>
+    </realms>
+
+    <pipelines>
+        <control-center-redirect-pipeline>
+            <oauth-authentication-manager>
+                <realm>okta</realm>
+                <flow>authorization-code</flow>
+                <scopes>
+                    <scope>openid</scope>
+                </scopes>
+                <jwt-validation>
+                    <reserved-claims>
+                        <iss>https://[Okta Domain].okta.com/oauth2/default</iss>
+                    </reserved-claims>
+                </jwt-validation>
+            </oauth-authentication-manager>
+
+            <file-authorization-manager>
+                <realm>file-provider</realm>
+                <use-authorization-key>true</use-authorization-key>
+                <use-authorization-role-key>false</use-authorization-role-key>
+            </file-authorization-manager>
+
+        </control-center-redirect-pipeline>
+    </pipelines>
+
+</enterprise-security-extension>

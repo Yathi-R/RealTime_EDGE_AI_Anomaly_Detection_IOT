@@ -1,0 +1,1 @@
+Place your HiveMQ Enterprise Extension for Google Cloud Pub/Sub customizations here.

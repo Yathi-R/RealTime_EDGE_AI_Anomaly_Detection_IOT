@@ -1,0 +1,250 @@
+2025/08/02-11:53:13.645736 2fac RocksDB version: 8.3.3
+2025/08/02-11:53:13.645780 2fac Git sha 791a7fe4023ac795072a9e0cbfc679a3764a2ba0
+2025/08/02-11:53:13.645798 2fac Compile date 2023-09-07 21:23:01
+2025/08/02-11:53:13.645809 2fac DB SUMMARY
+2025/08/02-11:53:13.645818 2fac DB Session ID:  WYLBVI34RWSGDD7UDXK1
+2025/08/02-11:53:13.657939 2fac CURRENT file:  CURRENT
+2025/08/02-11:53:13.657961 2fac IDENTITY file:  IDENTITY
+2025/08/02-11:53:13.660761 2fac MANIFEST file:  MANIFEST-000029 size: 102 Bytes
+2025/08/02-11:53:13.660793 2fac SST files in D:\hivemq-4.41.0\hivemq-4.41.0\data\persistence\retained_messages\040800_R\retained_messages_18 dir, Total Num: 0, files: 
+2025/08/02-11:53:13.660807 2fac Write Ahead Log file in D:\hivemq-4.41.0\hivemq-4.41.0\data\persistence\retained_messages\040800_R\retained_messages_18: 000028.log size: 0 ; 
+2025/08/02-11:53:13.660921 2fac                         Options.error_if_exists: 0
+2025/08/02-11:53:13.660931 2fac                       Options.create_if_missing: 1
+2025/08/02-11:53:13.660936 2fac                         Options.paranoid_checks: 1
+2025/08/02-11:53:13.660939 2fac             Options.flush_verify_memtable_count: 1
+2025/08/02-11:53:13.660945 2fac                               Options.track_and_verify_wals_in_manifest: 0
+2025/08/02-11:53:13.660951 2fac        Options.verify_sst_unique_id_in_manifest: 1
+2025/08/02-11:53:13.660958 2fac                                     Options.env: 000001FA40D65920
+2025/08/02-11:53:13.660965 2fac                                      Options.fs: WinFS
+2025/08/02-11:53:13.660973 2fac                                Options.info_log: 000001FA463EA520
+2025/08/02-11:53:13.660979 2fac                Options.max_file_opening_threads: 16
+2025/08/02-11:53:13.660985 2fac                              Options.statistics: 000001FA425E44C0
+2025/08/02-11:53:13.660992 2fac                               Options.use_fsync: 0
+2025/08/02-11:53:13.660998 2fac                       Options.max_log_file_size: 512000
+2025/08/02-11:53:13.661004 2fac                  Options.max_manifest_file_size: 1073741824
+2025/08/02-11:53:13.661009 2fac                   Options.log_file_time_to_roll: 0
+2025/08/02-11:53:13.661015 2fac                       Options.keep_log_file_num: 2
+2025/08/02-11:53:13.661021 2fac                    Options.recycle_log_file_num: 0
+2025/08/02-11:53:13.661026 2fac                         Options.allow_fallocate: 0
+2025/08/02-11:53:13.661031 2fac                        Options.allow_mmap_reads: 0
+2025/08/02-11:53:13.661036 2fac                       Options.allow_mmap_writes: 0
+2025/08/02-11:53:13.661042 2fac                        Options.use_direct_reads: 0
+2025/08/02-11:53:13.661048 2fac                        Options.use_direct_io_for_flush_and_compaction: 0
+2025/08/02-11:53:13.661054 2fac          Options.create_missing_column_families: 0
+2025/08/02-11:53:13.661060 2fac                              Options.db_log_dir: 
+2025/08/02-11:53:13.661067 2fac                                 Options.wal_dir: 
+2025/08/02-11:53:13.661072 2fac                Options.table_cache_numshardbits: 6
+2025/08/02-11:53:13.661079 2fac                         Options.WAL_ttl_seconds: 0
+2025/08/02-11:53:13.661084 2fac                       Options.WAL_size_limit_MB: 0
+2025/08/02-11:53:13.661090 2fac                        Options.max_write_batch_group_size_bytes: 1048576
+2025/08/02-11:53:13.661096 2fac             Options.manifest_preallocation_size: 4194304
+2025/08/02-11:53:13.661101 2fac                     Options.is_fd_close_on_exec: 1
+2025/08/02-11:53:13.661106 2fac                   Options.advise_random_on_open: 1
+2025/08/02-11:53:13.661112 2fac                    Options.db_write_buffer_size: 0
+2025/08/02-11:53:13.661118 2fac                    Options.write_buffer_manager: 000001FA42647340
+2025/08/02-11:53:13.661123 2fac         Options.access_hint_on_compaction_start: 1
+2025/08/02-11:53:13.661127 2fac           Options.random_access_max_buffer_size: 1048576
+2025/08/02-11:53:13.661132 2fac                      Options.use_adaptive_mutex: 0
+2025/08/02-11:53:13.661137 2fac                            Options.rate_limiter: 0000000000000000
+2025/08/02-11:53:13.661185 2fac     Options.sst_file_manager.rate_bytes_per_sec: 0
+2025/08/02-11:53:13.661198 2fac                       Options.wal_recovery_mode: 2
+2025/08/02-11:53:13.661203 2fac                  Options.enable_thread_tracking: 0
+2025/08/02-11:53:13.661206 2fac                  Options.enable_pipelined_write: 0
+2025/08/02-11:53:13.661209 2fac                  Options.unordered_write: 0
+2025/08/02-11:53:13.661213 2fac         Options.allow_concurrent_memtable_write: 1
+2025/08/02-11:53:13.661216 2fac      Options.enable_write_thread_adaptive_yield: 1
+2025/08/02-11:53:13.661219 2fac             Options.write_thread_max_yield_usec: 100
+2025/08/02-11:53:13.661223 2fac            Options.write_thread_slow_yield_usec: 3
+2025/08/02-11:53:13.661226 2fac                               Options.row_cache: None
+2025/08/02-11:53:13.661230 2fac                              Options.wal_filter: None
+2025/08/02-11:53:13.661233 2fac             Options.avoid_flush_during_recovery: 0
+2025/08/02-11:53:13.661236 2fac             Options.allow_ingest_behind: 0
+2025/08/02-11:53:13.661240 2fac             Options.two_write_queues: 0
+2025/08/02-11:53:13.661246 2fac             Options.manual_wal_flush: 0
+2025/08/02-11:53:13.661251 2fac             Options.wal_compression: 0
+2025/08/02-11:53:13.661257 2fac             Options.atomic_flush: 0
+2025/08/02-11:53:13.661263 2fac             Options.avoid_unnecessary_blocking_io: 0
+2025/08/02-11:53:13.661269 2fac                 Options.persist_stats_to_disk: 0
+2025/08/02-11:53:13.661274 2fac                 Options.write_dbid_to_manifest: 0
+2025/08/02-11:53:13.661279 2fac                 Options.log_readahead_size: 0
+2025/08/02-11:53:13.661285 2fac                 Options.file_checksum_gen_factory: Unknown
+2025/08/02-11:53:13.661291 2fac                 Options.best_efforts_recovery: 0
+2025/08/02-11:53:13.661295 2fac                Options.max_bgerror_resume_count: 2147483647
+2025/08/02-11:53:13.661298 2fac            Options.bgerror_resume_retry_interval: 1000000
+2025/08/02-11:53:13.661302 2fac             Options.allow_data_in_errors: 0
+2025/08/02-11:53:13.661305 2fac             Options.db_host_id: __hostname__
+2025/08/02-11:53:13.661308 2fac             Options.enforce_single_del_contracts: true
+2025/08/02-11:53:13.661312 2fac             Options.max_background_jobs: 12
+2025/08/02-11:53:13.661315 2fac             Options.max_background_compactions: -1
+2025/08/02-11:53:13.661319 2fac             Options.max_subcompactions: 1
+2025/08/02-11:53:13.661322 2fac             Options.avoid_flush_during_shutdown: 0
+2025/08/02-11:53:13.661326 2fac           Options.writable_file_max_buffer_size: 1048576
+2025/08/02-11:53:13.661329 2fac             Options.delayed_write_rate : 16777216
+2025/08/02-11:53:13.661333 2fac             Options.max_total_wal_size: 0
+2025/08/02-11:53:13.661336 2fac             Options.delete_obsolete_files_period_micros: 21600000000
+2025/08/02-11:53:13.661340 2fac                   Options.stats_dump_period_sec: 0
+2025/08/02-11:53:13.661343 2fac                 Options.stats_persist_period_sec: 0
+2025/08/02-11:53:13.661346 2fac                 Options.stats_history_buffer_size: 65536
+2025/08/02-11:53:13.661350 2fac                          Options.max_open_files: -1
+2025/08/02-11:53:13.661353 2fac                          Options.bytes_per_sync: 0
+2025/08/02-11:53:13.661357 2fac                      Options.wal_bytes_per_sync: 0
+2025/08/02-11:53:13.661360 2fac                   Options.strict_bytes_per_sync: 0
+2025/08/02-11:53:13.661363 2fac       Options.compaction_readahead_size: 0
+2025/08/02-11:53:13.661367 2fac                  Options.max_background_flushes: -1
+2025/08/02-11:53:13.661370 2fac Compression algorithms supported:
+2025/08/02-11:53:13.661374 2fac 	kZSTD supported: 1
+2025/08/02-11:53:13.661377 2fac 	kSnappyCompression supported: 1
+2025/08/02-11:53:13.661380 2fac 	kBZip2Compression supported: 0
+2025/08/02-11:53:13.661383 2fac 	kZlibCompression supported: 1
+2025/08/02-11:53:13.661386 2fac 	kLZ4Compression supported: 1
+2025/08/02-11:53:13.661421 2fac 	kXpressCompression supported: 0
+2025/08/02-11:53:13.661426 2fac 	kLZ4HCCompression supported: 1
+2025/08/02-11:53:13.661430 2fac 	kZSTDNotFinalCompression supported: 1
+2025/08/02-11:53:13.661433 2fac Fast CRC32 supported: Not supported on x86
+2025/08/02-11:53:13.661437 2fac DMutex implementation: std::mutex
+2025/08/02-11:53:13.668925 2fac [db\version_set.cc:5834] Recovering from manifest file: D:\hivemq-4.41.0\hivemq-4.41.0\data\persistence\retained_messages\040800_R\retained_messages_18/MANIFEST-000029
+2025/08/02-11:53:13.670995 2fac [db\column_family.cc:621] --------------- Options for column family [default]:
+2025/08/02-11:53:13.671013 2fac               Options.comparator: leveldb.BytewiseComparator
+2025/08/02-11:53:13.671021 2fac           Options.merge_operator: None
+2025/08/02-11:53:13.671026 2fac        Options.compaction_filter: None
+2025/08/02-11:53:13.671031 2fac        Options.compaction_filter_factory: None
+2025/08/02-11:53:13.671036 2fac  Options.sst_partitioner_factory: None
+2025/08/02-11:53:13.671042 2fac         Options.memtable_factory: SkipListFactory
+2025/08/02-11:53:13.671048 2fac            Options.table_factory: BlockBasedTable
+2025/08/02-11:53:13.671075 2fac            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (000001FA41243AD0)
+  cache_index_and_filter_blocks: 1
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 1
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000001FA40D68360
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 3280581427
+    num_shard_bits : 6
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.100
+    low_pri_pool_ratio: 0.000
+  persistent_cache: 0000000000000000
+  block_size: 32768
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 5
+  enable_index_compression: 1
+  block_align: 0
+  max_auto_readahead_size: 262144
+  prepopulate_block_cache: 0
+  initial_auto_readahead_size: 8192
+  num_file_reads_for_auto_readahead: 2
+2025/08/02-11:53:13.671082 2fac        Options.write_buffer_size: 8388608
+2025/08/02-11:53:13.671087 2fac  Options.max_write_buffer_number: 2
+2025/08/02-11:53:13.671093 2fac          Options.compression: Snappy
+2025/08/02-11:53:13.671098 2fac                  Options.bottommost_compression: Disabled
+2025/08/02-11:53:13.671104 2fac       Options.prefix_extractor: nullptr
+2025/08/02-11:53:13.671110 2fac   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2025/08/02-11:53:13.671115 2fac             Options.num_levels: 7
+2025/08/02-11:53:13.671121 2fac        Options.min_write_buffer_number_to_merge: 1
+2025/08/02-11:53:13.671127 2fac     Options.max_write_buffer_number_to_maintain: 0
+2025/08/02-11:53:13.671133 2fac     Options.max_write_buffer_size_to_maintain: 0
+2025/08/02-11:53:13.671139 2fac            Options.bottommost_compression_opts.window_bits: -14
+2025/08/02-11:53:13.671145 2fac                  Options.bottommost_compression_opts.level: 32767
+2025/08/02-11:53:13.671152 2fac               Options.bottommost_compression_opts.strategy: 0
+2025/08/02-11:53:13.671159 2fac         Options.bottommost_compression_opts.max_dict_bytes: 0
+2025/08/02-11:53:13.671165 2fac         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2025/08/02-11:53:13.671171 2fac         Options.bottommost_compression_opts.parallel_threads: 1
+2025/08/02-11:53:13.671177 2fac                  Options.bottommost_compression_opts.enabled: false
+2025/08/02-11:53:13.671183 2fac         Options.bottommost_compression_opts.max_dict_buffer_bytes: 0
+2025/08/02-11:53:13.671189 2fac         Options.bottommost_compression_opts.use_zstd_dict_trainer: true
+2025/08/02-11:53:13.671198 2fac            Options.compression_opts.window_bits: -14
+2025/08/02-11:53:13.671205 2fac                  Options.compression_opts.level: 32767
+2025/08/02-11:53:13.671211 2fac               Options.compression_opts.strategy: 0
+2025/08/02-11:53:13.671217 2fac         Options.compression_opts.max_dict_bytes: 0
+2025/08/02-11:53:13.671224 2fac         Options.compression_opts.zstd_max_train_bytes: 0
+2025/08/02-11:53:13.671229 2fac         Options.compression_opts.use_zstd_dict_trainer: true
+2025/08/02-11:53:13.671236 2fac         Options.compression_opts.parallel_threads: 1
+2025/08/02-11:53:13.671241 2fac                  Options.compression_opts.enabled: false
+2025/08/02-11:53:13.671248 2fac         Options.compression_opts.max_dict_buffer_bytes: 0
+2025/08/02-11:53:13.671255 2fac      Options.level0_file_num_compaction_trigger: 2
+2025/08/02-11:53:13.671260 2fac          Options.level0_slowdown_writes_trigger: 20
+2025/08/02-11:53:13.671265 2fac              Options.level0_stop_writes_trigger: 36
+2025/08/02-11:53:13.671272 2fac                   Options.target_file_size_base: 8388608
+2025/08/02-11:53:13.671278 2fac             Options.target_file_size_multiplier: 1
+2025/08/02-11:53:13.671284 2fac                Options.max_bytes_for_level_base: 16777216
+2025/08/02-11:53:13.671313 2fac Options.level_compaction_dynamic_level_bytes: 0
+2025/08/02-11:53:13.671321 2fac          Options.max_bytes_for_level_multiplier: 10.000000
+2025/08/02-11:53:13.671326 2fac Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2025/08/02-11:53:13.671334 2fac Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2025/08/02-11:53:13.671342 2fac Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2025/08/02-11:53:13.671348 2fac Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2025/08/02-11:53:13.671353 2fac Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2025/08/02-11:53:13.671359 2fac Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2025/08/02-11:53:13.671364 2fac Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2025/08/02-11:53:13.671370 2fac       Options.max_sequential_skip_in_iterations: 8
+2025/08/02-11:53:13.671375 2fac                    Options.max_compaction_bytes: 209715200
+2025/08/02-11:53:13.671382 2fac   Options.ignore_max_compaction_bytes_for_input: true
+2025/08/02-11:53:13.671387 2fac                        Options.arena_block_size: 1048576
+2025/08/02-11:53:13.671393 2fac   Options.soft_pending_compaction_bytes_limit: 68719476736
+2025/08/02-11:53:13.671400 2fac   Options.hard_pending_compaction_bytes_limit: 274877906944
+2025/08/02-11:53:13.671406 2fac                Options.disable_auto_compactions: 0
+2025/08/02-11:53:13.671414 2fac                        Options.compaction_style: kCompactionStyleLevel
+2025/08/02-11:53:13.671422 2fac                          Options.compaction_pri: kMinOverlappingRatio
+2025/08/02-11:53:13.671428 2fac Options.compaction_options_universal.size_ratio: 1
+2025/08/02-11:53:13.671434 2fac Options.compaction_options_universal.min_merge_width: 2
+2025/08/02-11:53:13.671439 2fac Options.compaction_options_universal.max_merge_width: 4294967295
+2025/08/02-11:53:13.671470 2fac Options.compaction_options_universal.max_size_amplification_percent: 200
+2025/08/02-11:53:13.671484 2fac Options.compaction_options_universal.compression_size_percent: -1
+2025/08/02-11:53:13.671492 2fac Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2025/08/02-11:53:13.671499 2fac Options.compaction_options_fifo.max_table_files_size: 1073741824
+2025/08/02-11:53:13.671504 2fac Options.compaction_options_fifo.allow_compaction: 0
+2025/08/02-11:53:13.672086 2fac                   Options.table_properties_collectors: 
+2025/08/02-11:53:13.672099 2fac                   Options.inplace_update_support: 0
+2025/08/02-11:53:13.672107 2fac                 Options.inplace_update_num_locks: 10000
+2025/08/02-11:53:13.672114 2fac               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2025/08/02-11:53:13.672121 2fac               Options.memtable_whole_key_filtering: 0
+2025/08/02-11:53:13.672171 2fac   Options.memtable_huge_page_size: 0
+2025/08/02-11:53:13.672181 2fac                           Options.bloom_locality: 0
+2025/08/02-11:53:13.672189 2fac                    Options.max_successive_merges: 0
+2025/08/02-11:53:13.672195 2fac                Options.optimize_filters_for_hits: 0
+2025/08/02-11:53:13.672202 2fac                Options.paranoid_file_checks: 0
+2025/08/02-11:53:13.672208 2fac                Options.force_consistency_checks: 1
+2025/08/02-11:53:13.672213 2fac                Options.report_bg_io_stats: 0
+2025/08/02-11:53:13.672218 2fac                               Options.ttl: 2592000
+2025/08/02-11:53:13.672224 2fac          Options.periodic_compaction_seconds: 0
+2025/08/02-11:53:13.672229 2fac  Options.preclude_last_level_data_seconds: 0
+2025/08/02-11:53:13.672235 2fac    Options.preserve_internal_time_seconds: 0
+2025/08/02-11:53:13.672240 2fac                       Options.enable_blob_files: false
+2025/08/02-11:53:13.672246 2fac                           Options.min_blob_size: 0
+2025/08/02-11:53:13.672252 2fac                          Options.blob_file_size: 268435456
+2025/08/02-11:53:13.672257 2fac                   Options.blob_compression_type: NoCompression
+2025/08/02-11:53:13.672262 2fac          Options.enable_blob_garbage_collection: false
+2025/08/02-11:53:13.672269 2fac      Options.blob_garbage_collection_age_cutoff: 0.250000
+2025/08/02-11:53:13.672277 2fac Options.blob_garbage_collection_force_threshold: 1.000000
+2025/08/02-11:53:13.672286 2fac          Options.blob_compaction_readahead_size: 0
+2025/08/02-11:53:13.672295 2fac                Options.blob_file_starting_level: 0
+2025/08/02-11:53:13.672300 2fac Options.experimental_mempurge_threshold: 0.000000
+2025/08/02-11:53:13.738337 2fac [db\version_set.cc:5885] Recovered from manifest file:D:\hivemq-4.41.0\hivemq-4.41.0\data\persistence\retained_messages\040800_R\retained_messages_18/MANIFEST-000029 succeeded,manifest_file_number is 29, next_file_number is 31, last_sequence is 0, log_number is 25,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 25
+2025/08/02-11:53:13.738354 2fac [db\version_set.cc:5894] Column family [default] (ID 0), log number is 25
+2025/08/02-11:53:13.743631 2fac [db\db_impl\db_impl_open.cc:636] DB ID: 868edbcd-6adc-11f0-9feb-24b2b95ac348
+2025/08/02-11:53:13.797552 2fac EVENT_LOG_v1 {"time_micros": 1754115793797544, "job": 1, "event": "recovery_started", "wal_files": [28]}
+2025/08/02-11:53:13.797570 2fac [db\db_impl\db_impl_open.cc:1131] Recovering log #28 mode 2
+2025/08/02-11:53:13.804674 2fac EVENT_LOG_v1 {"time_micros": 1754115793804667, "job": 1, "event": "recovery_finished"}
+2025/08/02-11:53:13.808988 2fac [db\version_set.cc:5347] Creating manifest 33
+2025/08/02-11:53:13.935572 2fac [file\delete_scheduler.cc:77] Deleted file D:\hivemq-4.41.0\hivemq-4.41.0\data\persistence\retained_messages\040800_R\retained_messages_18/000028.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2025/08/02-11:53:13.935593 2fac [db\db_impl\db_impl_open.cc:2085] SstFileManager instance 000001FA463CA2F0
+2025/08/02-11:53:13.951804 2fac DB pointer 000001FA43D103C0
+2025/08/03-04:17:04.662447 1bb0 [db\db_impl\db_impl.cc:496] Shutdown: canceling all background work
+2025/08/03-04:17:04.670169 1bb0 [db\db_impl\db_impl.cc:698] Shutdown complete

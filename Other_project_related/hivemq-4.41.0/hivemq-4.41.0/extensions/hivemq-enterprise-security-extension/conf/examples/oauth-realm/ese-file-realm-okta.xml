@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ese-file-realm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="ese-file-realm.xsd"
+                version="1">
+    <control-center>
+        <users>
+            <user>
+                <name>john-doe@example.com</name>
+                <permissions>
+                    <permission>HIVEMQ_VIEW_DATA_SESSION_ATTRIBUTES</permission>
+                </permissions>
+            </user>
+        </users>
+    </control-center>
+</ese-file-realm>

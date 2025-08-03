@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hivemq-distributed-tracing-extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                      xsi:noNamespaceSchemaLocation="config.xsd">
+
+    <service-name>HiveMQ Broker</service-name>
+
+    <propagators>
+        <propagator>tracecontext</propagator>
+    </propagators>
+
+    <exporters>
+        <otlp-exporter>
+            <id>my-otlp-grpc-exporter</id>
+            <endpoint>http://localhost:4317</endpoint>
+            <protocol>grpc</protocol>
+        </otlp-exporter>
+    </exporters>
+
+</hivemq-distributed-tracing-extension>

@@ -1,0 +1,9 @@
+2025-08-03 04:16:58,960 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2025-08-03 04:16:59,023 INFO  - Shutting down listeners and clients
+2025-08-03 04:16:59,028 INFO  - Shutdown of listeners is done
+2025-08-03 04:16:59,030 INFO  - Disconnecting 2 clients in 1 batches
+2025-08-03 04:16:59,036 INFO  - All clients are disconnected, proceeding with shutdown
+2025-08-03 04:17:02,245 INFO  - Shutting down extension system
+2025-08-03 04:17:02,249 INFO  - Stopping extension with id hivemq-allow-all-extension
+2025-08-03 04:17:02,249 INFO  - Extension "Allow All Extension" version 1.1.1 stopped successfully.
+2025-08-03 04:17:05,204 INFO  - Shutdown completed.

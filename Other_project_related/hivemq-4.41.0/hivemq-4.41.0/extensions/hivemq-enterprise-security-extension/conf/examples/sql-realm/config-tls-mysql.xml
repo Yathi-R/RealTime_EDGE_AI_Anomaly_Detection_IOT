@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<enterprise-security-extension
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="config.xsd"
+        version="1">
+    <realms>
+        <!-- a postgresql db-->
+        <sql-realm>
+            <name>mysql-backend</name>
+            <enabled>true</enabled>
+            <configuration>
+                <db-type>MYSQL</db-type>
+                <db-name>hivemq</db-name>
+                <db-host>hostname</db-host>
+                <db-port>5432</db-port>
+                <db-username>hivemq</db-username>
+                <db-password>password</db-password>
+                <tls>
+                    <keystore>
+                        <path>/path/to/my/keystore</path>
+                        <private-key-password>private-key-and-keystore-password</private-key-password>
+                        <password>private-key-and-keystore-password</password>
+                    </keystore>
+                    <truststore>
+                        <path>/path/to/my/truststore</path>
+                        <password>truststore-password</password>
+                    </truststore>
+                </tls>
+            </configuration>
+        </sql-realm>
+    </realms>
+    <pipelines>
+        <!-- secure access to the mqtt broker -->
+        <listener-pipeline listener="ALL">
+            <!-- authenticate over a sql db -->
+            <sql-authentication-manager>
+                <realm>mysql-backend</realm>
+            </sql-authentication-manager>
+            <!-- authorize over a sql db -->
+            <sql-authorization-manager>
+                <realm>mysql-backend</realm>
+                <use-authorization-key>false</use-authorization-key>
+                <use-authorization-role-key>true</use-authorization-role-key>
+            </sql-authorization-manager>
+        </listener-pipeline>
+        <!-- secure access to the control center -->
+        <control-center-pipeline>
+            <!-- authenticate over a sql db -->
+            <sql-authentication-manager>
+                <realm>mysql-backend</realm>
+            </sql-authentication-manager>
+            <!-- authorize over a sql db -->
+            <sql-authorization-manager>
+                <realm>mysql-backend</realm>
+                <use-authorization-key>true</use-authorization-key>
+                <use-authorization-role-key>true</use-authorization-role-key>
+            </sql-authorization-manager>
+        </control-center-pipeline>
+        <!-- secure access to the Rest API -->
+        <rest-api-pipeline listener="ALL">
+            <authentication-preprocessors>
+                <http-headers-preprocessor>
+                    <basic-auth-extraction/>
+                </http-headers-preprocessor>
+            </authentication-preprocessors>
+            <!-- authenticate over a sql db -->
+            <sql-authentication-manager>
+                <realm>mysql-backend</realm>
+            </sql-authentication-manager>
+            <!-- authorize over a sql db -->
+            <sql-authorization-manager>
+                <realm>mysql-backend</realm>
+                <use-authorization-key>true</use-authorization-key>
+                <use-authorization-role-key>true</use-authorization-role-key>
+            </sql-authorization-manager>
+        </rest-api-pipeline>
+    </pipelines>
+</enterprise-security-extension>

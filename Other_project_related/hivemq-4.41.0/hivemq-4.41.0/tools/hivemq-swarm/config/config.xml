@@ -1,0 +1,16 @@
+<swarm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="config.xsd">
+    <commander>
+        <agents>
+            <agent>
+                <host>localhost</host>
+                <port>3881</port>
+            </agent>
+        </agents>
+    </commander>
+
+    <agent>
+        <bindAddress>localhost</bindAddress>
+        <bindPort>3881</bindPort>
+    </agent>
+</swarm>

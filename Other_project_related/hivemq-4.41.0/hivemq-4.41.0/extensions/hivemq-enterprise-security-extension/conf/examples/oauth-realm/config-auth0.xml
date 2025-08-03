@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<enterprise-security-extension
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="config.xsd"
+        version="1">
+
+    <realms>
+        <oauth-realm>
+            <name>auth0</name>
+            <enabled>true</enabled>
+            <configuration>
+                <jwks-endpoint>https://[Auth0 Domain].auth0.com/.well-known/jwks.json</jwks-endpoint>
+                <auth-endpoint>https://[Auth0 Domain].auth0.com/authorize?audience=https://[Auth0 Domain].auth0.com/api/v2/</auth-endpoint>
+                <token-endpoint>https://[Auth0 Domain].auth0.com/oauth/token</token-endpoint>
+                <callback-uri>http://localhost:8080/callback</callback-uri>
+                <simple-auth>
+                    <username>[Auth0 Client ID]</username>
+                    <password>[Auth0 Client Secret]</password>
+                </simple-auth>
+            </configuration>
+        </oauth-realm>
+
+        <file-realm>
+            <name>file-provider</name>
+            <enabled>true</enabled>
+            <configuration>
+                <file-path>conf/ese-file-realm-auth0.xml</file-path>
+            </configuration>
+        </file-realm>
+    </realms>
+
+    <pipelines>
+        <control-center-redirect-pipeline>
+
+            <oauth-authentication-manager>
+                <realm>auth0</realm>
+                <flow>authorization-code</flow>
+                <scopes>
+                    <scope>openid</scope>
+                </scopes>
+                <jwt-validation>
+                    <reserved-claims>
+                        <aud>https://[Auth0 Domain].auth0.com/api/v2/</aud>
+                        <iss>https://[Auth0 Domain].auth0.com/</iss>
+                    </reserved-claims>
+                </jwt-validation>
+            </oauth-authentication-manager>
+
+            <file-authorization-manager>
+                <realm>file-provider</realm>
+                <use-authorization-key>true</use-authorization-key>
+                <use-authorization-role-key>false</use-authorization-role-key>
+            </file-authorization-manager>
+
+        </control-center-redirect-pipeline>
+    </pipelines>
+
+</enterprise-security-extension>

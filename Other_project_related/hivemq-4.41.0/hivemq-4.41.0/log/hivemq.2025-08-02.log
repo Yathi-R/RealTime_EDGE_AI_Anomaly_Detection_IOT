@@ -1,0 +1,104 @@
+2025-08-02 01:30:10,708 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2025-08-02 01:30:10,720 INFO  - Shutting down listeners and clients
+2025-08-02 01:30:10,724 INFO  - Shutdown of listeners is done
+2025-08-02 01:30:10,724 INFO  - No clients are connected, proceeding with shutdown
+2025-08-02 01:30:13,673 INFO  - Shutting down extension system
+2025-08-02 01:30:13,678 INFO  - Stopping extension with id hivemq-allow-all-extension
+2025-08-02 01:30:13,678 INFO  - Extension "Allow All Extension" version 1.1.1 stopped successfully.
+2025-08-02 01:30:16,342 INFO  - Shutdown completed.
+2025-08-02 01:30:37,022 INFO  - Starting HiveMQ Enterprise Server
+2025-08-02 01:30:37,022 INFO  - HiveMQ version: 4.41.0
+2025-08-02 01:30:37,022 INFO  - HiveMQ home directory: D:\hivemq-4.41.0\hivemq-4.41.0
+2025-08-02 01:30:37,077 INFO  - Log Configuration was overridden by D:\hivemq-4.41.0\hivemq-4.41.0\conf\logback.xml
+2025-08-02 01:30:37,322 WARN  - Cannot load the configuration from 'D:\hivemq-4.41.0\hivemq-4.41.0\conf\config.xml' because of the following errors:
+	- XML schema violation in line '19' and column '11' caused by: "cvc-complex-type.2.4.d: Invalid content was found starting with element 'type'. No child element is expected at this point."
+2025-08-02 01:30:37,323 ERROR - Preventing HiveMQ startup because the configuration could not be loaded.
+2025-08-02 01:31:32,686 INFO  - Starting HiveMQ Enterprise Server
+2025-08-02 01:31:32,686 INFO  - HiveMQ version: 4.41.0
+2025-08-02 01:31:32,686 INFO  - HiveMQ home directory: D:\hivemq-4.41.0\hivemq-4.41.0
+2025-08-02 01:31:32,741 INFO  - Log Configuration was overridden by D:\hivemq-4.41.0\hivemq-4.41.0\conf\logback.xml
+2025-08-02 01:31:33,019 INFO  - Successfully loaded configuration from 'D:\hivemq-4.41.0\hivemq-4.41.0\conf\config.xml'.
+2025-08-02 01:31:33,279 INFO  - This node's ID is 8hVPJ
+2025-08-02 01:31:33,279 INFO  - Clustering is disabled
+2025-08-02 01:31:38,508 INFO  - No valid license file found. Using trial license, restricted to 25 connections.
+2025-08-02 01:31:40,297 INFO  - No valid license file for Data Hub found. Using free license, restricted to 1 policy.
+2025-08-02 01:31:40,486 INFO  - Audit Logger started.
+2025-08-02 01:31:40,536 INFO  - This node uses '12' CPU cores.
+2025-08-02 01:31:40,893 INFO  - Starting HiveMQ extension system.
+2025-08-02 01:31:40,945 INFO  - Starting extension with id "hivemq-allow-all-extension" at D:\hivemq-4.41.0\hivemq-4.41.0\extensions\hivemq-allow-all-extension
+2025-08-02 01:31:40,945 WARN  - 
+################################################################################################################
+# This HiveMQ deployment is not secure! You are lacking Authentication and Authorization.                      #
+# Right now any MQTT client can connect to the broker with a full set of permissions.                          #
+# For production usage, add an appropriate security extension and remove the hivemq-allow-all extension.       #
+# You can download security extensions from the HiveMQ Marketplace (https://www.hivemq.com/extensions/).       #
+################################################################################################################
+2025-08-02 01:31:40,945 INFO  - Extension "Allow All Extension" version 1.1.1 started successfully.
+2025-08-02 01:31:43,060 INFO  - 8hVPJ: no members discovered after 2006 ms: creating cluster as first member
+2025-08-02 01:31:43,093 WARN  - No user for HiveMQ Control Center configured. Starting with default user
+2025-08-02 01:31:43,100 INFO  - Starting HiveMQ Control Center on address 127.0.0.1 and port 8080
+2025-08-02 01:31:43,125 INFO  - Mounting HiveMQ Control Center V2
+2025-08-02 01:31:43,385 INFO  - Started HiveMQ Control Center in 292ms
+2025-08-02 01:31:43,407 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2025-08-02 01:31:43,541 INFO  - Enabled protocols for TCP Listener with TLS at address 0.0.0.0 and port 8883: [TLSv1.3, TLSv1.2]
+2025-08-02 01:31:43,541 INFO  - Enabled cipher suites for TCP Listener with TLS at address 0.0.0.0 and port 8883: [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2025-08-02 01:31:43,543 INFO  - Starting TLS TCP listener on address 0.0.0.0 and port 8883
+2025-08-02 01:31:43,546 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883.
+2025-08-02 01:31:43,547 INFO  - Started TCP Listener with TLS on address 0.0.0.0 and on port 8883.
+2025-08-02 01:31:43,547 INFO  - Started HiveMQ in 10864ms
+2025-08-02 02:28:49,353 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2025-08-02 02:28:49,371 INFO  - Shutting down listeners and clients
+2025-08-02 02:28:49,372 INFO  - Shutdown of listeners is done
+2025-08-02 02:28:49,372 INFO  - No clients are connected, proceeding with shutdown
+2025-08-02 02:28:52,254 INFO  - Shutting down extension system
+2025-08-02 02:28:52,254 INFO  - Stopping extension with id hivemq-allow-all-extension
+2025-08-02 02:28:52,258 INFO  - Extension "Allow All Extension" version 1.1.1 stopped successfully.
+2025-08-02 02:28:54,859 INFO  - Shutdown completed.
+2025-08-02 11:50:21,227 INFO  - Starting HiveMQ Enterprise Server
+2025-08-02 11:50:21,229 INFO  - HiveMQ version: 4.41.0
+2025-08-02 11:50:21,229 INFO  - HiveMQ home directory: D:\hivemq-4.41.0\hivemq-4.41.0
+2025-08-02 11:50:21,405 INFO  - Log Configuration was overridden by D:\hivemq-4.41.0\hivemq-4.41.0\conf\logback.xml
+2025-08-02 11:50:21,991 WARN  - Cannot load the configuration from 'D:\hivemq-4.41.0\hivemq-4.41.0\conf\config.xml' because of the following errors:
+	- XML schema violation in line '23' and column '26' caused by: "cvc-complex-type.2.4.d: Invalid content was found starting with element 'private-key-password'. No child element is expected at this point."
+	- XML schema violation in line '25' and column '9' caused by: "The element type "truststore" must be terminated by the matching end-tag "</truststore>"."
+2025-08-02 11:50:21,999 ERROR - Preventing HiveMQ startup because the configuration could not be loaded.
+2025-08-02 11:52:05,729 INFO  - Starting HiveMQ Enterprise Server
+2025-08-02 11:52:05,732 INFO  - HiveMQ version: 4.41.0
+2025-08-02 11:52:05,732 INFO  - HiveMQ home directory: D:\hivemq-4.41.0\hivemq-4.41.0
+2025-08-02 11:52:05,838 INFO  - Log Configuration was overridden by D:\hivemq-4.41.0\hivemq-4.41.0\conf\logback.xml
+2025-08-02 11:52:06,300 WARN  - Cannot load the configuration from 'D:\hivemq-4.41.0\hivemq-4.41.0\conf\config.xml' because of the following errors:
+	- XML schema violation in line '23' and column '26' caused by: "cvc-complex-type.2.4.d: Invalid content was found starting with element 'private-key-password'. No child element is expected at this point."
+2025-08-02 11:52:06,306 ERROR - Preventing HiveMQ startup because the configuration could not be loaded.
+2025-08-02 11:53:09,570 INFO  - Starting HiveMQ Enterprise Server
+2025-08-02 11:53:09,570 INFO  - HiveMQ version: 4.41.0
+2025-08-02 11:53:09,570 INFO  - HiveMQ home directory: D:\hivemq-4.41.0\hivemq-4.41.0
+2025-08-02 11:53:09,687 INFO  - Log Configuration was overridden by D:\hivemq-4.41.0\hivemq-4.41.0\conf\logback.xml
+2025-08-02 11:53:10,255 INFO  - Successfully loaded configuration from 'D:\hivemq-4.41.0\hivemq-4.41.0\conf\config.xml'.
+2025-08-02 11:53:10,831 INFO  - This node's ID is XRcJK
+2025-08-02 11:53:10,831 INFO  - Clustering is disabled
+2025-08-02 11:53:17,404 INFO  - No valid license file found. Using trial license, restricted to 25 connections.
+2025-08-02 11:53:19,122 INFO  - No valid license file for Data Hub found. Using free license, restricted to 1 policy.
+2025-08-02 11:53:19,425 INFO  - Audit Logger started.
+2025-08-02 11:53:19,505 INFO  - This node uses '12' CPU cores.
+2025-08-02 11:53:19,971 INFO  - Starting HiveMQ extension system.
+2025-08-02 11:53:20,100 INFO  - Starting extension with id "hivemq-allow-all-extension" at D:\hivemq-4.41.0\hivemq-4.41.0\extensions\hivemq-allow-all-extension
+2025-08-02 11:53:20,120 WARN  - 
+################################################################################################################
+# This HiveMQ deployment is not secure! You are lacking Authentication and Authorization.                      #
+# Right now any MQTT client can connect to the broker with a full set of permissions.                          #
+# For production usage, add an appropriate security extension and remove the hivemq-allow-all extension.       #
+# You can download security extensions from the HiveMQ Marketplace (https://www.hivemq.com/extensions/).       #
+################################################################################################################
+2025-08-02 11:53:20,121 INFO  - Extension "Allow All Extension" version 1.1.1 started successfully.
+2025-08-02 11:53:22,352 INFO  - XRcJK: no members discovered after 2012 ms: creating cluster as first member
+2025-08-02 11:53:22,442 WARN  - No user for HiveMQ Control Center configured. Starting with default user
+2025-08-02 11:53:22,460 INFO  - Starting HiveMQ Control Center on address 127.0.0.1 and port 8080
+2025-08-02 11:53:22,572 INFO  - Mounting HiveMQ Control Center V2
+2025-08-02 11:53:23,204 INFO  - Started HiveMQ Control Center in 762ms
+2025-08-02 11:53:23,255 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2025-08-02 11:53:23,628 INFO  - Enabled protocols for TCP Listener with TLS at address 0.0.0.0 and port 8883: [TLSv1.3, TLSv1.2]
+2025-08-02 11:53:23,628 INFO  - Enabled cipher suites for TCP Listener with TLS at address 0.0.0.0 and port 8883: [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2025-08-02 11:53:23,631 INFO  - Starting TLS TCP listener on address 0.0.0.0 and port 8883
+2025-08-02 11:53:23,635 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883.
+2025-08-02 11:53:23,636 INFO  - Started TCP Listener with TLS on address 0.0.0.0 and on port 8883.
+2025-08-02 11:53:23,636 INFO  - Started HiveMQ in 14066ms

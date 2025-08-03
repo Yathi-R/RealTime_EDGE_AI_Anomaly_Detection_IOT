@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
+
+    <xs:element name="hivemq-distributed-tracing-extension" type="tracingExtensionEntity"/>
+
+    <xs:element name="propagators" type="propagatorEntity"/>
+
+    <xs:element name="batch-span-processor" type="batchSpanProcessor"/>
+
+    <xs:element name="otlp-exporter" type="otlpExporterEntity"/>
+
+    <xs:element name="zipkin-exporter" type="zipkinExporterEntity"/>
+
+    <xs:complexType name="tracingExtensionEntity">
+        <xs:all>
+            <xs:element name="service-name" type="xs:string"/>
+            <xs:element ref="propagators"/>
+            <xs:element ref="batch-span-processor" minOccurs="0"/>
+            <xs:element name="exporters">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:choice maxOccurs="unbounded">
+                            <xs:element ref="otlp-exporter"/>
+                            <xs:element ref="zipkin-exporter"/>
+                        </xs:choice>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="propagatorEntity">
+        <xs:all>
+            <xs:element name="propagator" type="propagator"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:simpleType name="propagator">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="tracecontext"/>
+            <xs:enumeration value="jaeger"/>
+            <xs:enumeration value="b3"/>
+            <xs:enumeration value="b3multi"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="batchSpanProcessor">
+        <xs:all>
+            <xs:element name="schedule-delay" type="xs:long" minOccurs="0" default="5000"/>
+            <xs:element name="max-queue-size" type="xs:integer" minOccurs="0" default="2048"/>
+            <xs:element name="max-export-batch-size" type="xs:integer" minOccurs="0" default="512"/>
+            <xs:element name="export-timeout" type="xs:long" minOccurs="0" default="30000"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="otlpExporterEntity">
+        <xs:all>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="endpoint" type="xs:string"/>
+            <xs:element name="protocol" type="otlpProtocol"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:simpleType name="otlpProtocol">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="grpc"/>
+            <xs:enumeration value="http/protobuf"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="zipkinExporterEntity">
+        <xs:all>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="endpoint" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+</xs:schema>

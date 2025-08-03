@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<hivemq xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="config.xsd">
+
+  <listeners>
+    <tcp-listener>
+      <port>1883</port>
+      <bind-address>0.0.0.0</bind-address>
+    </tcp-listener>
+
+    <tls-tcp-listener>
+      <port>8883</port>
+	  <bind-address>0.0.0.0</bind-address>
+      <tls>
+        <keystore>
+          <path>resources\certs\broker-keystore.jks</path>
+          <password>cdacdesd</password>
+		  <private-key-password>cdacdesd</private-key-password>
+        </keystore>
+		<truststore>
+			<path>resources\certs\broker-truststore.jks</path>
+			<password>cdacdesd</password>
+			<!--private-key-password>cdacdesd</private-key-password -->
+		</truststore>
+      </tls>
+    </tls-tcp-listener>
+  </listeners>
+
+  <anonymous-usage-statistics>
+    <enabled>true</enabled>
+  </anonymous-usage-statistics>
+
+</hivemq>
+
+

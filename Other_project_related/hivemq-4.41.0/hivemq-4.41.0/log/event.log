@@ -1,0 +1,360 @@
+2025-07-27 17:30:49,902 - Client ID: nodered_0bcdf1b94ce1a964, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-01 21:26:41,940 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: SSL message transmission failed for TCP Listener with TLS on port: 8883.
+2025-08-01 21:26:43,010 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: SSL message transmission failed for TCP Listener with TLS on port: 8883.
+2025-08-01 21:26:43,014 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: SSL message transmission failed for TCP Listener with TLS on port: 8883.
+2025-08-01 21:26:43,318 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: SSL message transmission failed for TCP Listener with TLS on port: 8883.
+2025-08-01 21:26:53,606 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: TLS handshake not finished in time for TCP Listener with TLS on port: 8883.
+2025-08-01 21:58:59,858 - Client ID: nodered_0bcdf1b94ce1a964 session has expired at 2025-08-01T16:07:37.461Z. All persistent data for this client has been removed.
+2025-08-01 23:12:20,977 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:12:36,433 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:12:58,224 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:18:13,607 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:18:28,743 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:18:44,275 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:18:59,738 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:19:19,906 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:19:35,001 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:19:50,119 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:20:05,172 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:20:20,276 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:20:35,382 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:20:50,471 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:21:08,869 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:21:23,966 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:21:45,430 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:22:02,427 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-01 23:22:20,864 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:14:04,068 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2025-08-02 00:15:58,937 - Client ID: UNKNOWN, IP: 192.168.137.1 was disconnected. reason: No CONNECT sent in time.
+2025-08-02 00:22:51,461 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2025-08-02 00:31:55,211 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:32:10,671 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:32:25,725 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:32:40,828 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:32:55,934 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:33:10,990 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:33:30,956 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:33:47,958 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:34:08,031 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:34:23,111 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:34:42,951 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:34:58,044 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:35:18,484 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:35:33,571 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:35:48,643 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:36:03,762 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:36:18,798 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:36:33,904 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:36:49,008 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:37:07,543 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:37:22,637 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:37:45,535 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:38:00,624 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:38:20,559 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:38:35,648 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:38:50,716 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:39:05,821 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:39:20,875 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:39:35,970 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:39:51,040 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:40:11,054 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:40:26,142 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:40:45,975 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:41:01,062 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:41:21,002 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:41:36,086 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:41:51,212 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:42:06,261 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:42:21,356 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:42:36,469 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:42:51,540 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:43:10,062 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:43:25,146 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:43:48,050 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:44:03,138 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 00:44:21,539 - Client ID: UNKNOWN, IP: 192.168.137.36 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 01:24:06,032 - Client ID: UNKNOWN, IP: 192.168.137.1 was disconnected. reason: No CONNECT sent in time.
+2025-08-02 01:32:15,798 - Client ID: UNKNOWN, IP: 192.168.137.1 was disconnected. reason: No CONNECT sent in time.
+2025-08-02 01:34:25,260 - Client ID: UNKNOWN, IP: 192.168.137.1 was disconnected. reason: No CONNECT sent in time.
+2025-08-02 01:40:01,406 - Client ID: UNKNOWN, IP: 192.168.137.1 was disconnected. reason: No CONNECT sent in time.
+2025-08-02 01:55:29,070 - Client ID: UNKNOWN, IP: 192.168.137.1 was disconnected. reason: No CONNECT sent in time.
+2025-08-02 13:06:01,185 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2025-08-02 13:07:10,232 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2025-08-02 13:13:40,279 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2025-08-02 14:07:49,110 - Client ID: UNKNOWN, IP: 192.168.137.252 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 14:08:04,187 - Client ID: UNKNOWN, IP: 192.168.137.252 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 14:08:19,564 - Client ID: UNKNOWN, IP: 192.168.137.252 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 14:08:34,606 - Client ID: UNKNOWN, IP: 192.168.137.252 was disconnected. reason: SSL handshake failed for TCP Listener with TLS on port: 8883.
+2025-08-02 14:21:59,779 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:22:14,783 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:22:24,868 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:22:39,853 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:23:11,567 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:23:26,621 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:23:41,604 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:23:56,651 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:24:11,705 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:24:26,759 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:24:41,810 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:24:56,862 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:25:15,292 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:25:31,688 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:25:46,736 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:26:01,788 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:26:16,846 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:26:35,285 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:26:50,329 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:27:05,381 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:27:20,437 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:27:35,491 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:27:50,546 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:28:05,597 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:28:25,288 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:28:40,324 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:29:00,296 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:29:15,335 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:29:30,388 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:29:45,443 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:30:00,497 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:30:15,535 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:30:30,600 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:30:48,636 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:31:03,684 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:31:18,734 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:31:34,088 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:31:49,149 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:32:04,201 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:32:19,255 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:32:40,789 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:32:55,817 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:33:15,799 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:33:30,838 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:33:45,891 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:34:00,945 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:34:15,999 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:34:31,050 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:34:46,104 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:35:05,843 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:35:20,830 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:35:40,800 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:35:55,841 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:36:18,792 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:36:33,840 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:36:52,341 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:37:07,350 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:37:22,373 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:37:37,429 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:37:52,483 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:38:07,536 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:38:22,591 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:38:41,330 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:38:56,381 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:39:11,437 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:39:26,477 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:39:41,533 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:39:56,598 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:40:11,649 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:40:30,363 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:40:45,358 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:41:05,307 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:41:20,360 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:41:35,421 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:41:50,475 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:42:05,529 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:42:20,580 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:42:35,632 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:42:55,817 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:43:10,859 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:43:30,818 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:43:45,872 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:44:07,359 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:44:22,351 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:44:42,328 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:44:57,363 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:45:12,419 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:45:27,477 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:45:42,523 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:46:02,360 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:46:17,350 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:46:35,848 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:46:50,900 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:47:05,894 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:47:20,937 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:47:35,991 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:47:51,041 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:48:06,094 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:48:21,149 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:48:36,203 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:48:51,255 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:49:06,301 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:49:24,838 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:49:39,899 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:49:54,946 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:50:10,001 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:50:31,314 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:50:46,357 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:51:01,414 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:51:16,460 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:51:34,868 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:51:49,861 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:52:04,909 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:52:19,957 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:52:42,856 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:52:57,862 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:53:12,897 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:53:27,955 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:53:43,007 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 14:53:58,067 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:08:19,778 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:08:34,768 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:08:49,808 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:09:04,861 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:09:19,914 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:09:34,969 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:09:52,918 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:10:07,968 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:10:24,870 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:10:40,313 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:10:55,362 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:11:10,335 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:11:25,390 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:11:43,896 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:11:58,895 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:12:13,928 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:12:28,988 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:12:44,039 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:12:59,090 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:13:14,145 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:13:29,198 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:13:44,245 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:13:59,306 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:14:14,353 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:14:29,416 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:14:44,465 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:14:59,521 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:15:14,574 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:15:29,629 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:15:44,680 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:15:59,735 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:16:17,875 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:16:32,922 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:16:47,967 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:17:03,022 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:17:18,074 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:17:33,124 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:17:48,174 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:18:03,235 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:18:18,286 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:18:33,341 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:18:48,394 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:19:03,451 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:19:18,503 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:19:38,352 - Client ID: UNKNOWN, IP: 192.168.137.252 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-02 15:36:02,470 - Client ID: esp32_client, IP: 192.168.137.252, Clean Start: true, Session Expiry: 0 connected.
+2025-08-02 15:45:22,088 - Client ID: esp32_client, IP: 192.168.137.252 was disconnected. reason: Client was idle for too long.
+2025-08-02 15:53:54,209 - Client ID: esp32_client session has expired at 2025-08-02T10:15:22.120Z. All persistent data for this client has been removed.
+2025-08-03 01:13:37,408 - Client ID: nodered_09476bd85304aeb6, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 02:09:22,958 - Client ID: nodered_09476bd85304aeb6, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 02:09:23,063 - Client ID: nodered_153ee8aaafd6a02e, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 02:13:31,388 - Client ID: esp32_client, IP: 192.168.137.52, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 02:15:17,906 - Client ID: esp32_client, IP: 192.168.137.52 was disconnected. reason: Another client connected with the same client id..
+2025-08-03 02:15:17,913 - Client ID: esp32_client, IP: 192.168.137.52, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 02:19:24,971 - Client ID: esp32_client, IP: 192.168.137.52 was disconnected. reason: Client was idle for too long.
+2025-08-03 02:21:29,161 - Client ID: esp32_client session has expired at 2025-08-02T20:49:24.973Z. All persistent data for this client has been removed.
+2025-08-03 02:23:09,337 - Client ID: nodered_09476bd85304aeb6 session has expired at 2025-08-02T20:39:22.958Z. All persistent data for this client has been removed.
+2025-08-03 02:24:28,948 - Client ID: esp32_client, IP: 192.168.137.52, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 02:24:47,250 - Client ID: esp32_client, IP: 192.168.137.52 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-03 02:28:43,827 - Client ID: esp32_client, IP: 192.168.137.52, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 02:29:00,827 - Client ID: esp32_client, IP: 192.168.137.52 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-03 02:32:59,858 - Client ID: nodered_153ee8aaafd6a02e, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 02:32:59,883 - Client ID: nodered_51ee0a4cbab77559, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 02:35:30,612 - Client ID: nodered_153ee8aaafd6a02e session has expired at 2025-08-02T21:02:59.859Z. All persistent data for this client has been removed.
+2025-08-03 02:42:51,409 - Client ID: esp32_client session has expired at 2025-08-02T20:59:00.827Z. All persistent data for this client has been removed.
+2025-08-03 02:48:24,655 - Client ID: esp32_client, IP: 192.168.137.52, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 02:48:38,490 - Client ID: esp32_client, IP: 192.168.137.52 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-03 02:55:44,659 - Client ID: nodered_51ee0a4cbab77559, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 02:55:44,685 - Client ID: nodered_4a7e85b0bbcc8831, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 02:56:18,513 - Client ID: nodered_4a7e85b0bbcc8831, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 02:56:18,536 - Client ID: nodered_9ca73dc7b08f1a1f, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 02:57:05,786 - Client ID: esp32_client, IP: 192.168.137.52, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:00:53,353 - Client ID: nodered_51ee0a4cbab77559 session has expired at 2025-08-02T21:25:44.661Z. All persistent data for this client has been removed.
+2025-08-03 03:01:05,237 - Client ID: nodered_9ca73dc7b08f1a1f, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:01:05,273 - Client ID: nodered_03d47bde57c7d1f8, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:13:34,765 - Client ID: nodered_9ca73dc7b08f1a1f session has expired at 2025-08-02T21:31:05.238Z. All persistent data for this client has been removed.
+2025-08-03 03:15:48,302 - Client ID: nodered_03d47bde57c7d1f8, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:15:48,339 - Client ID: nodered_2611b419bdb13187, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:16:08,851 - Client ID: nodered_2611b419bdb13187, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:16:08,877 - Client ID: nodered_d34fdb20bbc696cb, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:17:15,155 - Client ID: nodered_4a7e85b0bbcc8831 session has expired at 2025-08-02T21:26:18.515Z. All persistent data for this client has been removed.
+2025-08-03 03:21:55,689 - Client ID: nodered_03d47bde57c7d1f8 session has expired at 2025-08-02T21:45:48.303Z. All persistent data for this client has been removed.
+2025-08-03 03:24:55,912 - Client ID: esp32_client, IP: 192.168.137.52 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-03 03:24:57,564 - Client ID: esp32_client, IP: 192.168.137.52, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:30:00,785 - Client ID: esp32_client, IP: 192.168.137.52 was disconnected. reason: Another client connected with the same client id..
+2025-08-03 03:30:00,787 - Client ID: esp32_client, IP: 192.168.137.52, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:30:31,169 - Client ID: nodered_d34fdb20bbc696cb, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:30:31,197 - Client ID: nodered_d8a2a0cecab03785, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:31:42,155 - Client ID: nodered_d8a2a0cecab03785, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:31:42,177 - Client ID: nodered_b7acbfe2809fe4ba, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:33:36,989 - Client ID: nodered_d34fdb20bbc696cb session has expired at 2025-08-02T22:00:31.170Z. All persistent data for this client has been removed.
+2025-08-03 03:35:17,146 - Client ID: nodered_2611b419bdb13187 session has expired at 2025-08-02T21:46:08.852Z. All persistent data for this client has been removed.
+2025-08-03 03:36:17,236 - Client ID: nodered_d8a2a0cecab03785 session has expired at 2025-08-02T22:01:42.157Z. All persistent data for this client has been removed.
+2025-08-03 03:40:00,124 - Client ID: nodered_b7acbfe2809fe4ba, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:40:00,142 - Client ID: nodered_0c0f6ae27522b26a, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:41:24,165 - Client ID: nodered_0c0f6ae27522b26a, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:41:24,188 - Client ID: nodered_e2400c61dcceabbf, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:41:37,867 - Client ID: nodered_b7acbfe2809fe4ba session has expired at 2025-08-02T22:10:00.124Z. All persistent data for this client has been removed.
+2025-08-03 03:42:16,338 - Client ID: nodered_e2400c61dcceabbf, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:42:16,355 - Client ID: nodered_618a7a9ade3e1769, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:43:04,825 - Client ID: nodered_618a7a9ade3e1769, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:43:04,847 - Client ID: nodered_a1e51311f3ed4241, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:43:17,805 - Client ID: esp32_client, IP: 192.168.137.52 was disconnected. reason: Another client connected with the same client id..
+2025-08-03 03:43:17,807 - Client ID: esp32_client, IP: 192.168.137.52, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:43:18,035 - Client ID: nodered_0c0f6ae27522b26a session has expired at 2025-08-02T22:11:24.166Z. All persistent data for this client has been removed.
+2025-08-03 03:43:29,072 - Client ID: nodered_a1e51311f3ed4241, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:43:29,086 - Client ID: nodered_61f07e945b5da0e3, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:44:18,144 - Client ID: nodered_e2400c61dcceabbf session has expired at 2025-08-02T22:12:16.339Z. All persistent data for this client has been removed.
+2025-08-03 03:44:26,302 - Client ID: esp32_client, IP: 192.168.137.52 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-03 03:44:28,359 - Client ID: esp32_client, IP: 192.168.137.52, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:45:03,069 - Client ID: esp32_client, IP: 192.168.137.52 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-03 03:45:04,718 - Client ID: esp32_client, IP: 192.168.137.52, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:45:51,786 - Client ID: nodered_61f07e945b5da0e3, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:45:51,799 - Client ID: nodered_01e5472e24082c5b, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:46:14,444 - Client ID: esp32_client, IP: 192.168.137.52 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-03 03:46:15,790 - Client ID: esp32_client, IP: 192.168.137.52, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:46:45,436 - Client ID: nodered_01e5472e24082c5b, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:46:45,454 - Client ID: nodered_fece9b3a3e0c03d1, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:47:32,088 - Client ID: nodered_fece9b3a3e0c03d1, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:47:32,105 - Client ID: nodered_72d01f88adb0b40c, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:48:39,380 - Client ID: nodered_72d01f88adb0b40c, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:48:39,395 - Client ID: nodered_0276b79cb3ce369f, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:48:58,647 - Client ID: nodered_01e5472e24082c5b session has expired at 2025-08-02T22:16:45.437Z. All persistent data for this client has been removed.
+2025-08-03 03:49:21,832 - Client ID: esp32_client, IP: 192.168.137.52 was disconnected. reason: Client was idle for too long.
+2025-08-03 03:50:38,836 - Client ID: nodered_fece9b3a3e0c03d1 session has expired at 2025-08-02T22:17:32.089Z. All persistent data for this client has been removed.
+2025-08-03 03:51:53,124 - Client ID: esp32_client, IP: 192.168.137.153, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:54:45,132 - Client ID: nodered_0276b79cb3ce369f, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:54:45,168 - Client ID: nodered_c079e9c3c5101bba, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:55:59,487 - Client ID: nodered_a1e51311f3ed4241 session has expired at 2025-08-02T22:13:29.074Z. All persistent data for this client has been removed.
+2025-08-03 03:56:19,512 - Client ID: nodered_0276b79cb3ce369f session has expired at 2025-08-02T22:24:45.134Z. All persistent data for this client has been removed.
+2025-08-03 03:56:20,197 - Client ID: nodered_c079e9c3c5101bba, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:56:20,225 - Client ID: nodered_f91af353b9fb3285, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:57:26,131 - Client ID: nodered_f91af353b9fb3285, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:57:26,185 - Client ID: nodered_2b809a0b041c44a3, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 03:57:39,656 - Client ID: nodered_618a7a9ade3e1769 session has expired at 2025-08-02T22:13:04.827Z. All persistent data for this client has been removed.
+2025-08-03 03:59:28,079 - Client ID: nodered_2b809a0b041c44a3, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 03:59:28,102 - Client ID: nodered_0aa98b1d03b45b06, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 04:01:52,920 - Client ID: nodered_0aa98b1d03b45b06, IP: 127.0.0.1 disconnected gracefully.
+2025-08-03 04:01:52,974 - Client ID: nodered_96aec639909f0971, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 04:02:20,158 - Client ID: nodered_c079e9c3c5101bba session has expired at 2025-08-02T22:26:20.197Z. All persistent data for this client has been removed.
+2025-08-03 04:02:40,189 - Client ID: nodered_72d01f88adb0b40c session has expired at 2025-08-02T22:18:39.381Z. All persistent data for this client has been removed.
+2025-08-03 04:03:20,257 - Client ID: nodered_61f07e945b5da0e3 session has expired at 2025-08-02T22:15:51.786Z. All persistent data for this client has been removed.
+2025-08-03 04:05:00,468 - Client ID: nodered_0aa98b1d03b45b06 session has expired at 2025-08-02T22:31:52.922Z. All persistent data for this client has been removed.
+2025-08-03 04:05:40,556 - Client ID: nodered_f91af353b9fb3285 session has expired at 2025-08-02T22:27:26.131Z. All persistent data for this client has been removed.
+2025-08-03 04:06:40,651 - Client ID: nodered_2b809a0b041c44a3 session has expired at 2025-08-02T22:29:28.079Z. All persistent data for this client has been removed.
+2025-08-03 04:11:14,902 - Client ID: esp32_client, IP: 192.168.137.153 was disconnected. reason: Another client connected with the same client id..
+2025-08-03 04:11:14,904 - Client ID: esp32_client, IP: 192.168.137.153, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 04:12:27,917 - Client ID: esp32_client, IP: 192.168.137.153 was disconnected. reason: Another client connected with the same client id..
+2025-08-03 04:12:27,920 - Client ID: esp32_client, IP: 192.168.137.153, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 04:13:39,908 - Client ID: esp32_client, IP: 192.168.137.153 was disconnected. reason: Another client connected with the same client id..
+2025-08-03 04:13:39,910 - Client ID: esp32_client, IP: 192.168.137.153, Clean Start: true, Session Expiry: 0 connected.
+2025-08-03 04:16:59,032 - Client ID: esp32_client, IP: 192.168.137.153 disconnected ungracefully from TCP Listener with TLS on port: 8883.
+2025-08-03 04:16:59,032 - Client ID: nodered_96aec639909f0971, IP: 127.0.0.1 disconnected ungracefully from TCP Listener with TLS on port: 8883.

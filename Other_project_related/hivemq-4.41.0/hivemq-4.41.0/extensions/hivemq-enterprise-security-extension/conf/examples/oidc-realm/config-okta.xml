@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<enterprise-security-extension
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="config.xsd"
+        version="1">
+    <realms>
+        <oidc-realm>
+            <name>okta</name>
+            <enabled>true</enabled>
+            <configuration>
+                <issuer>https://[Okta Domain]/oauth2/default</issuer>
+                <client-id>[Okta Client ID]</client-id>
+                <client-authentication>
+                    <client-secret-basic>[Okta Client Secret]</client-secret-basic>
+                </client-authentication>
+            </configuration>
+        </oidc-realm>
+
+        <file-realm>
+            <name>file-provider</name>
+            <enabled>true</enabled>
+            <configuration>
+                <file-path>conf/ese-file-realm-okta.xml</file-path>
+            </configuration>
+        </file-realm>
+    </realms>
+
+    <pipelines>
+        <control-center-pipeline>
+            <oidc-authentication-manager>
+                <realm>okta</realm>
+                <redirect-uri>http://localhost:8080/callback</redirect-uri>
+                <post-logout-redirect-uri>http://localhost:8080</post-logout-redirect-uri>
+                <authorization-key-claim>sub</authorization-key-claim>
+            </oidc-authentication-manager>
+
+            <file-authorization-manager>
+                <realm>file-provider</realm>
+                <use-authorization-role-key>false</use-authorization-role-key>
+            </file-authorization-manager>
+        </control-center-pipeline>
+    </pipelines>
+</enterprise-security-extension>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="hivemq-google-cloud-pubsub-extension" type="pubsubConfigEntity">
+        <xs:key name="connection-id">
+            <xs:selector xpath="pubsub-connections/pubsub-connection"/>
+            <xs:field xpath="id"/>
+        </xs:key>
+        <xs:key name="pubsub-to-mqtt-mapping-id">
+            <xs:selector xpath="pubsub-to-mqtt-mappings/pubsub-to-mqtt-mapping"/>
+            <xs:field xpath="id"/>
+        </xs:key>
+        <xs:key name="mqtt-to-pubsub-mapping-id">
+            <xs:selector xpath="mqtt-to-pubsub-mappings/mqtt-to-pubsub-mapping"/>
+            <xs:field xpath="id"/>
+        </xs:key>
+        <xs:key name="pubsub-to-mqtt-transformer-id">
+            <xs:selector xpath="pubsub-to-mqtt-transformers/pubsub-to-mqtt-transformer"/>
+            <xs:field xpath="id"/>
+        </xs:key>
+        <xs:key name="mqtt-to-pubsub-transformer-id">
+            <xs:selector xpath="mqtt-to-pubsub-transformers/mqtt-to-pubsub-transformer"/>
+            <xs:field xpath="id"/>
+        </xs:key>
+        <xs:keyref name="pubsub-to-mqtt-connection-id-ref" refer="connection-id">
+            <xs:selector xpath="pubsub-to-mqtt-mappings/pubsub-to-mqtt-mapping"/>
+            <xs:field xpath="pubsub-connection"/>
+        </xs:keyref>
+        <xs:keyref name="mqtt-to-pubsub-connection-id-ref" refer="connection-id">
+            <xs:selector xpath="mqtt-to-pubsub-mappings/mqtt-to-pubsub-mapping"/>
+            <xs:field xpath="pubsub-connection"/>
+        </xs:keyref>
+        <xs:keyref name="pubsub-to-mqtt-transformer-connection-id-ref" refer="connection-id">
+            <xs:selector xpath="pubsub-to-mqtt-transformers/pubsub-to-mqtt-transformer"/>
+            <xs:field xpath="pubsub-connection"/>
+        </xs:keyref>
+        <xs:keyref name="mqtt-to-pubsub-transformer-connection-id-ref" refer="connection-id">
+            <xs:selector xpath="mqtt-to-pubsub-transformers/mqtt-to-pubsub-transformer"/>
+            <xs:field xpath="pubsub-connection"/>
+        </xs:keyref>
+    </xs:element>
+
+    <xs:complexType name="pubsubConfigEntity">
+        <xs:all>
+            <xs:element name="internal" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="option" type="internalOptionEntity" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="pubsub-connections">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="pubsub-connection" type="pubsubConnectionEntity" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="pubsub-to-mqtt-mappings" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="pubsub-to-mqtt-mapping" type="pubsubToMqttMappingEntity" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="mqtt-to-pubsub-mappings" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mqtt-to-pubsub-mapping" type="mqttToPubsubMappingEntity" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="pubsub-to-mqtt-transformers" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="pubsub-to-mqtt-transformer" type="pubsubToMqttTransformerEntity" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="mqtt-to-pubsub-transformers" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mqtt-to-pubsub-transformer" type="mqttToPubsubTransformerEntity" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="internalOptionEntity">
+        <xs:all>
+            <xs:element name="key" type="xs:string"/>
+            <xs:element name="value" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="pubsubConnectionEntity">
+        <xs:all>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="google-cloud-project-id" type="xs:string"/>
+            <xs:element name="authentication">
+                <xs:complexType>
+                    <xs:choice>
+                        <xs:element name="service-account" type="filePathEntity"/>
+                        <xs:element name="workload-identity" type="filePathEntity"/>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="filePathEntity">
+        <xs:sequence>
+            <xs:element name="file-path" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="pubsubToMqttMappingEntity">
+        <xs:all>
+            <xs:element name="enabled" type="xs:boolean" default="true" minOccurs="0"/>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="pubsub-connection" type="xs:string"/>
+            <xs:element name="preserve-message-properties" type="xs:boolean" default="false" minOccurs="0"/>
+            <xs:element name="mqtt-topics">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mqtt-topic" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="pubsub-subscriptions">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="pubsub-subscription" type="pubsubSubscriptionEntity" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="mqtt-publish-fields" type="mqttPublishFieldsEntity" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="pubsubSubscriptionEntity">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="mqttPublishFieldsEntity">
+        <xs:all>
+            <xs:element name="retained-flag" type="xs:boolean" minOccurs="0" default="false"/>
+            <xs:element name="payload-format-indicator" type="payloadFormat" minOccurs="0" default="UNSPECIFIED"/>
+            <xs:element name="message-expiry-interval" type="xs:int" minOccurs="0"/>
+            <xs:element name="response-topic" type="xs:string" minOccurs="0"/>
+            <xs:element name="correlation-data" type="xs:string" minOccurs="0"/>
+            <xs:element name="content-type" type="xs:string" minOccurs="0"/>
+            <xs:element name="qos" type="qos" minOccurs="0" default="1"/>
+            <xs:element name="user-properties" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="user-property" type="userPropertyEntity" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="userPropertyEntity">
+        <xs:all>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="value" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="mqttToPubsubMappingEntity">
+        <xs:all>
+            <xs:element name="enabled" type="xs:boolean" default="true" minOccurs="0"/>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="pubsub-connection" type="xs:string"/>
+            <xs:element name="preserve-message-properties" type="xs:boolean" default="false" minOccurs="0"/>
+            <xs:element name="mqtt-topic-filters">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mqtt-topic-filter" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="pubsub-topics">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="pubsub-topic" type="pubsubTopicEntity" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="pubsub-attributes" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="pubsub-attribute" type="pubsubAttributeEntity" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="pubsubTopicEntity">
+        <xs:all>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="ordering-key" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:choice>
+                            <xs:element name="mqtt-topic" type="noContent"/>
+                            <xs:element name="fixed-key">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="value" type="xs:string"/>
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="none" type="noContent"/>
+                        </xs:choice>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="noContent">
+        <xs:all/>
+    </xs:complexType>
+
+    <xs:complexType name="pubsubAttributeEntity">
+        <xs:all>
+            <xs:element name="key" type="xs:string"/>
+            <xs:element ref="attribute-value"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:element name="attribute-value" abstract="true"/>
+    <xs:element name="mqtt-topic" substitutionGroup="attribute-value"/>
+    <xs:element name="value" substitutionGroup="attribute-value"/>
+
+    <xs:complexType name="pubsubToMqttTransformerEntity">
+        <xs:all>
+            <xs:element name="enabled" type="xs:boolean" default="true" minOccurs="0"/>
+            <xs:element name="transformer" type="xs:string"/>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="pubsub-connection" type="xs:string"/>
+            <xs:element name="custom-settings" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="custom-setting" type="customSettingEntity" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="pubsub-subscriptions">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="pubsub-subscription" type="pubsubSubscriptionEntity" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="mqttToPubsubTransformerEntity">
+        <xs:all>
+            <xs:element name="enabled" type="xs:boolean" default="true" minOccurs="0"/>
+            <xs:element name="transformer" type="xs:string"/>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="pubsub-connection" type="xs:string"/>
+            <xs:element name="custom-settings" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="custom-setting" type="customSettingEntity" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="mqtt-topic-filters">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mqtt-topic-filter" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="customSettingEntity">
+        <xs:all>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="value" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:simpleType name="qos">
+        <xs:restriction base="xs:int">
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="payloadFormat">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="UTF_8"/>
+            <xs:enumeration value="UNSPECIFIED"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

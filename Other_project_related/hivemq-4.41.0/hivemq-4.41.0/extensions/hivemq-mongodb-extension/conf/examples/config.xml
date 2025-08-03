@@ -1,0 +1,27 @@
+<hivemq-mongodb-extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:noNamespaceSchemaLocation="config.xsd">
+    <mongodbs>
+        <mongodb>
+            <id>my-mongodb-id</id>
+            <connection>
+                <host>my.host.com</host>
+                <port>27017</port>
+            </connection>
+        </mongodb>
+    </mongodbs>
+
+    <mqtt-to-mongodb-routes>
+        <mqtt-to-mongodb-route>
+            <id>my-mqtt-to-mongodb-route</id>
+            <mongodb-id>my-mongodb-id</mongodb-id>
+            <mqtt-topic-filters>
+                <mqtt-topic-filter>#</mqtt-topic-filter>
+            </mqtt-topic-filters>
+            <collection>my-collection</collection>
+            <database>my-database</database>
+            <processor>
+                <document-template>document-template.json</document-template>
+            </processor>
+        </mqtt-to-mongodb-route>
+    </mqtt-to-mongodb-routes>
+</hivemq-mongodb-extension>

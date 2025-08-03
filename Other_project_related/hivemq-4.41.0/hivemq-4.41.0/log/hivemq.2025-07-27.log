@@ -1,0 +1,140 @@
+2025-07-27 16:56:20,148 INFO  - Starting HiveMQ Enterprise Server
+2025-07-27 16:56:20,148 INFO  - HiveMQ version: 4.41.0
+2025-07-27 16:56:20,148 INFO  - HiveMQ home directory: C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0
+2025-07-27 16:56:20,263 INFO  - Log Configuration was overridden by C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0\conf\logback.xml
+2025-07-27 16:56:20,955 INFO  - Successfully loaded configuration from 'C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0\conf\config.xml'.
+2025-07-27 16:56:21,535 INFO  - This node's ID is tYHeG
+2025-07-27 16:56:21,535 INFO  - Clustering is disabled
+2025-07-27 16:56:31,377 INFO  - No valid license file found. Using trial license, restricted to 25 connections.
+2025-07-27 16:56:34,288 INFO  - No valid license file for Data Hub found. Using free license, restricted to 1 policy.
+2025-07-27 16:56:34,603 INFO  - Audit Logger started.
+2025-07-27 16:56:34,748 INFO  - This node uses '12' CPU cores.
+2025-07-27 16:56:36,483 INFO  - Starting HiveMQ extension system.
+2025-07-27 16:56:36,595 INFO  - Starting extension with id "hivemq-allow-all-extension" at C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0\extensions\hivemq-allow-all-extension
+2025-07-27 16:56:36,647 WARN  - 
+################################################################################################################
+# This HiveMQ deployment is not secure! You are lacking Authentication and Authorization.                      #
+# Right now any MQTT client can connect to the broker with a full set of permissions.                          #
+# For production usage, add an appropriate security extension and remove the hivemq-allow-all extension.       #
+# You can download security extensions from the HiveMQ Marketplace (https://www.hivemq.com/extensions/).       #
+################################################################################################################
+2025-07-27 16:56:36,650 INFO  - Extension "Allow All Extension" version 1.1.1 started successfully.
+2025-07-27 16:56:38,931 INFO  - tYHeG: no members discovered after 2010 ms: creating cluster as first member
+2025-07-27 16:56:39,023 WARN  - No user for HiveMQ Control Center configured. Starting with default user
+2025-07-27 16:56:39,061 INFO  - Starting HiveMQ Control Center on address 127.0.0.1 and port 8080
+2025-07-27 16:56:39,142 INFO  - Mounting HiveMQ Control Center V2
+2025-07-27 16:56:39,875 INFO  - Started HiveMQ Control Center in 852ms
+2025-07-27 16:56:39,906 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2025-07-27 16:56:39,961 ERROR - Could not start TCP Listener on port 1883 and address 0.0.0.0. Is it already in use?
+2025-07-27 16:56:39,963 ERROR - Could not bind any listener. Stopping HiveMQ.
+2025-07-27 16:56:40,090 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2025-07-27 16:56:40,100 INFO  - Shutting down listeners and clients
+2025-07-27 16:56:40,102 INFO  - Shutdown of listeners is done
+2025-07-27 16:56:40,102 INFO  - No clients are connected, proceeding with shutdown
+2025-07-27 16:56:43,525 INFO  - Shutting down extension system
+2025-07-27 16:56:43,525 INFO  - Stopping extension with id hivemq-allow-all-extension
+2025-07-27 16:56:43,530 INFO  - Extension "Allow All Extension" version 1.1.1 stopped successfully.
+2025-07-27 16:56:46,487 INFO  - Shutdown completed.
+2025-07-27 16:58:12,637 INFO  - Starting HiveMQ Enterprise Server
+2025-07-27 16:58:12,637 INFO  - HiveMQ version: 4.41.0
+2025-07-27 16:58:12,637 INFO  - HiveMQ home directory: C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0
+2025-07-27 16:58:12,746 INFO  - Log Configuration was overridden by C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0\conf\logback.xml
+2025-07-27 16:58:13,232 INFO  - Successfully loaded configuration from 'C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0\conf\config.xml'.
+2025-07-27 16:58:13,735 INFO  - This node's ID is ylMM2
+2025-07-27 16:58:13,735 INFO  - Clustering is disabled
+2025-07-27 16:58:20,382 INFO  - No valid license file found. Using trial license, restricted to 25 connections.
+2025-07-27 16:58:22,550 INFO  - No valid license file for Data Hub found. Using free license, restricted to 1 policy.
+2025-07-27 16:58:22,827 INFO  - Audit Logger started.
+2025-07-27 16:58:22,897 INFO  - This node uses '12' CPU cores.
+2025-07-27 16:58:23,516 INFO  - Starting HiveMQ extension system.
+2025-07-27 16:58:23,576 INFO  - Starting extension with id "hivemq-allow-all-extension" at C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0\extensions\hivemq-allow-all-extension
+2025-07-27 16:58:23,576 WARN  - 
+################################################################################################################
+# This HiveMQ deployment is not secure! You are lacking Authentication and Authorization.                      #
+# Right now any MQTT client can connect to the broker with a full set of permissions.                          #
+# For production usage, add an appropriate security extension and remove the hivemq-allow-all extension.       #
+# You can download security extensions from the HiveMQ Marketplace (https://www.hivemq.com/extensions/).       #
+################################################################################################################
+2025-07-27 16:58:23,576 INFO  - Extension "Allow All Extension" version 1.1.1 started successfully.
+2025-07-27 16:58:25,791 INFO  - ylMM2: no members discovered after 2015 ms: creating cluster as first member
+2025-07-27 16:58:25,857 WARN  - No user for HiveMQ Control Center configured. Starting with default user
+2025-07-27 16:58:25,869 INFO  - Starting HiveMQ Control Center on address 127.0.0.1 and port 8080
+2025-07-27 16:58:25,917 INFO  - Mounting HiveMQ Control Center V2
+2025-07-27 16:58:26,431 INFO  - Started HiveMQ Control Center in 574ms
+2025-07-27 16:58:26,465 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2025-07-27 16:58:26,514 ERROR - Could not start TCP Listener on port 1883 and address 0.0.0.0. Is it already in use?
+2025-07-27 16:58:26,514 ERROR - Could not bind any listener. Stopping HiveMQ.
+2025-07-27 16:58:26,599 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2025-07-27 16:58:26,609 INFO  - Shutting down listeners and clients
+2025-07-27 16:58:26,609 INFO  - Shutdown of listeners is done
+2025-07-27 16:58:26,609 INFO  - No clients are connected, proceeding with shutdown
+2025-07-27 16:58:29,574 INFO  - Shutting down extension system
+2025-07-27 16:58:29,578 INFO  - Stopping extension with id hivemq-allow-all-extension
+2025-07-27 16:58:29,578 INFO  - Extension "Allow All Extension" version 1.1.1 stopped successfully.
+2025-07-27 16:58:32,529 INFO  - Shutdown completed.
+2025-07-27 16:59:10,464 INFO  - Starting HiveMQ Enterprise Server
+2025-07-27 16:59:10,465 INFO  - HiveMQ version: 4.41.0
+2025-07-27 16:59:10,465 INFO  - HiveMQ home directory: C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0
+2025-07-27 16:59:10,552 INFO  - Log Configuration was overridden by C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0\conf\logback.xml
+2025-07-27 16:59:11,045 INFO  - Successfully loaded configuration from 'C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0\conf\config.xml'.
+2025-07-27 16:59:11,552 INFO  - This node's ID is JkPiO
+2025-07-27 16:59:11,552 INFO  - Clustering is disabled
+2025-07-27 16:59:19,341 INFO  - No valid license file found. Using trial license, restricted to 25 connections.
+2025-07-27 16:59:21,770 INFO  - No valid license file for Data Hub found. Using free license, restricted to 1 policy.
+2025-07-27 16:59:22,057 INFO  - Audit Logger started.
+2025-07-27 16:59:22,152 INFO  - This node uses '12' CPU cores.
+2025-07-27 16:59:22,727 INFO  - Starting HiveMQ extension system.
+2025-07-27 16:59:22,791 INFO  - Starting extension with id "hivemq-allow-all-extension" at C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0\extensions\hivemq-allow-all-extension
+2025-07-27 16:59:22,791 WARN  - 
+################################################################################################################
+# This HiveMQ deployment is not secure! You are lacking Authentication and Authorization.                      #
+# Right now any MQTT client can connect to the broker with a full set of permissions.                          #
+# For production usage, add an appropriate security extension and remove the hivemq-allow-all extension.       #
+# You can download security extensions from the HiveMQ Marketplace (https://www.hivemq.com/extensions/).       #
+################################################################################################################
+2025-07-27 16:59:22,791 INFO  - Extension "Allow All Extension" version 1.1.1 started successfully.
+2025-07-27 16:59:24,979 INFO  - JkPiO: no members discovered after 2013 ms: creating cluster as first member
+2025-07-27 16:59:25,040 WARN  - No user for HiveMQ Control Center configured. Starting with default user
+2025-07-27 16:59:25,048 INFO  - Starting HiveMQ Control Center on address 127.0.0.1 and port 8080
+2025-07-27 16:59:25,094 INFO  - Mounting HiveMQ Control Center V2
+2025-07-27 16:59:25,505 INFO  - Started HiveMQ Control Center in 465ms
+2025-07-27 16:59:25,532 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2025-07-27 16:59:25,569 ERROR - Could not start TCP Listener on port 1883 and address 0.0.0.0. Is it already in use?
+2025-07-27 16:59:25,569 ERROR - Could not bind any listener. Stopping HiveMQ.
+2025-07-27 16:59:25,610 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2025-07-27 16:59:25,616 INFO  - Shutting down listeners and clients
+2025-07-27 16:59:25,617 INFO  - Shutdown of listeners is done
+2025-07-27 16:59:25,617 INFO  - No clients are connected, proceeding with shutdown
+2025-07-27 16:59:28,772 INFO  - Shutting down extension system
+2025-07-27 16:59:28,779 INFO  - Stopping extension with id hivemq-allow-all-extension
+2025-07-27 16:59:28,779 INFO  - Extension "Allow All Extension" version 1.1.1 stopped successfully.
+2025-07-27 16:59:31,894 INFO  - Shutdown completed.
+2025-07-27 17:06:26,517 INFO  - Starting HiveMQ Enterprise Server
+2025-07-27 17:06:26,528 INFO  - HiveMQ version: 4.41.0
+2025-07-27 17:06:26,528 INFO  - HiveMQ home directory: C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0
+2025-07-27 17:06:26,611 INFO  - Log Configuration was overridden by C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0\conf\logback.xml
+2025-07-27 17:06:27,030 INFO  - Successfully loaded configuration from 'C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0\conf\config.xml'.
+2025-07-27 17:06:27,526 INFO  - This node's ID is nDck4
+2025-07-27 17:06:27,526 INFO  - Clustering is disabled
+2025-07-27 17:06:34,956 INFO  - No valid license file found. Using trial license, restricted to 25 connections.
+2025-07-27 17:06:36,862 INFO  - No valid license file for Data Hub found. Using free license, restricted to 1 policy.
+2025-07-27 17:06:37,125 INFO  - Audit Logger started.
+2025-07-27 17:06:37,205 INFO  - This node uses '12' CPU cores.
+2025-07-27 17:06:37,822 INFO  - Starting HiveMQ extension system.
+2025-07-27 17:06:37,870 INFO  - Starting extension with id "hivemq-allow-all-extension" at C:\Users\yrajn\Downloads\hivemq-4.41.0\hivemq-4.41.0\extensions\hivemq-allow-all-extension
+2025-07-27 17:06:37,870 WARN  - 
+################################################################################################################
+# This HiveMQ deployment is not secure! You are lacking Authentication and Authorization.                      #
+# Right now any MQTT client can connect to the broker with a full set of permissions.                          #
+# For production usage, add an appropriate security extension and remove the hivemq-allow-all extension.       #
+# You can download security extensions from the HiveMQ Marketplace (https://www.hivemq.com/extensions/).       #
+################################################################################################################
+2025-07-27 17:06:37,870 INFO  - Extension "Allow All Extension" version 1.1.1 started successfully.
+2025-07-27 17:06:40,058 INFO  - nDck4: no members discovered after 2013 ms: creating cluster as first member
+2025-07-27 17:06:40,123 WARN  - No user for HiveMQ Control Center configured. Starting with default user
+2025-07-27 17:06:40,139 INFO  - Starting HiveMQ Control Center on address 127.0.0.1 and port 8080
+2025-07-27 17:06:40,193 INFO  - Mounting HiveMQ Control Center V2
+2025-07-27 17:06:40,704 INFO  - Started HiveMQ Control Center in 581ms
+2025-07-27 17:06:40,737 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2025-07-27 17:06:40,784 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883.
+2025-07-27 17:06:40,784 INFO  - Started HiveMQ in 14263ms

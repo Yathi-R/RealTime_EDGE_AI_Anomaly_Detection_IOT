@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="hivemq-snowflake-extension" type="ConfigEntity"/>
+
+    <xs:complexType name="ConfigEntity">
+        <xs:all>
+            <xs:element name="internal" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="option" type="InternalOptionEntity" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="snowflakes" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="snowflake" type="SnowflakeEntity" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="mqtt-to-snowflake-routes" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mqtt-to-snowflake-route" type="MqttToSnowflakeRouteEntity"
+                                    maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="InternalOptionEntity">
+        <xs:all>
+            <xs:element name="key" type="nonEmptyString"/>
+            <xs:element name="value" type="nonEmptyString"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="SnowflakeEntity">
+        <xs:all>
+            <xs:element name="id" type="lowercaseId"/>
+            <xs:element name="account-url" type="xs:anyURI"/>
+            <xs:element name="user" type="nonEmptyString"/>
+            <xs:element name="role" type="nonEmptyString"/>
+            <xs:element name="private-key" type="nonEmptyString"/>
+            <xs:element name="private-key-passphrase" type="nonEmptyString" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="MqttToSnowflakeRouteEntity">
+        <xs:all>
+            <xs:element name="id" type="lowercaseId"/>
+            <xs:element name="snowflake-id" type="xs:IDREF"/>
+            <xs:element name="enabled" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="mqtt-topic-filters">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mqtt-topic-filter" type="nonEmptyString" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="processor">
+                <xs:complexType>
+                    <xs:choice>
+                        <xs:element name="snowpipe-streaming">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="database" type="nonEmptyString"/>
+                                    <xs:element name="schema" type="nonEmptyString"/>
+                                    <xs:element name="table" type="nonEmptyString"/>
+                                    <xs:element name="columns">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="column" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                        <xs:all>
+                                                            <xs:element name="name" type="nonEmptyString"/>
+                                                            <xs:element name="value" type="columnValueEntity"/>
+                                                        </xs:all>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:simpleType name="columnValueEntity">
+        <xs:union memberTypes="allowedPlaceholdersEnum allowedPlaceholdersPattern"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="allowedPlaceholdersEnum" final="restriction">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="mqtt-topic"/>
+            <xs:enumeration value="mqtt-payload-utf8"/>
+            <xs:enumeration value="mqtt-payload-base64"/>
+            <xs:enumeration value="mqtt-retain"/>
+            <xs:enumeration value="mqtt-packet-id"/>
+            <xs:enumeration value="mqtt-payload-format-indicator"/>
+            <xs:enumeration value="mqtt-response-topic"/>
+            <xs:enumeration value="mqtt-correlation-data-utf8"/>
+            <xs:enumeration value="mqtt-correlation-data-base64"/>
+            <xs:enumeration value="mqtt-user-properties-json"/>
+            <xs:enumeration value="timestamp-ms"/>
+            <xs:enumeration value="timestamp-iso-8601"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="allowedPlaceholdersPattern">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="mqtt-user-properties\$.*"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="lowercaseId">
+        <xs:restriction base="xs:ID">
+            <xs:pattern value="[a-z0-9_-]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="nonEmptyString">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

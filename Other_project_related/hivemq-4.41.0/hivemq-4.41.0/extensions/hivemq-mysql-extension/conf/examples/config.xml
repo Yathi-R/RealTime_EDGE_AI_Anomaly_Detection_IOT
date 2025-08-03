@@ -1,0 +1,54 @@
+<hivemq-mysql-extension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:noNamespaceSchemaLocation="config.xsd">
+    <mysqls>
+        <mysql>
+            <id>my-mysql-id</id>
+            <host>my.host.com</host>
+            <port>3306</port>
+            <database>my-database</database>
+            <username>my-user</username>
+            <password>my-password</password>
+        </mysql>
+    </mysqls>
+
+    <mqtt-to-mysql-routes>
+
+        <!-- insert every message using the INSERT STATEMENT processor -->
+        <mqtt-to-mysql-route>
+            <id>my-mqtt-to-mysql-route-insert</id>
+            <mysql-id>my-mysql-id</mysql-id>
+            <mqtt-topic-filters>
+                <mqtt-topic-filter>#</mqtt-topic-filter>
+            </mqtt-topic-filters>
+            <processor>
+                <insert-statement>
+                    <table>mqtt_to_mysql_table</table>
+                    <batching>true</batching>
+                    <columns>
+                        <column>
+                            <name>topic</name>
+                            <value>mqtt-topic</value>
+                        </column>
+                        <column>
+                            <name>payload_utf8</name>
+                            <value>mqtt-payload-utf8</value>
+                        </column>
+                    </columns>
+                </insert-statement>
+            </processor>
+        </mqtt-to-mysql-route>
+
+        <!-- insert every message using the STATEMENT TEMPLATE processor -->
+        <mqtt-to-mysql-route>
+            <id>my-mqtt-to-mysql-route-template</id>
+            <mysql-id>my-mysql-id</mysql-id>
+            <mqtt-topic-filters>
+                <mqtt-topic-filter>#</mqtt-topic-filter>
+            </mqtt-topic-filters>
+            <processor>
+                <statement-template>statement-template.sql</statement-template>
+            </processor>
+        </mqtt-to-mysql-route>
+
+    </mqtt-to-mysql-routes>
+</hivemq-mysql-extension>

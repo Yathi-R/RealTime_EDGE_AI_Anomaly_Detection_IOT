@@ -103,13 +103,6 @@ void spo2_handler(void * parameters){
 }
 
 
-//static void ecg_handler(void * parameters){
-//	while(1){
-//		HAL_UART_Transmit(&huart3, (uint8_t *)"Hello from ecg\r\n", sizeof("Hello from ecg\r\n"), 100);
-//		HAL_GPIO_TogglePin(GPIOF, GPIO_PIN_4);
-//		vTaskDelay(pdMS_TO_TICKS(1000));
-//	}
-//}
 /* USER CODE END 0 */
 
 /**

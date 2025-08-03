@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="hivemq-amazon-kinesis-extension" type="ConfigEntity">
+        <xs:key name="aws-credential-profile-id">
+            <xs:selector xpath="aws-credential-profiles/aws-credential-profile"/>
+            <xs:field xpath="id"/>
+        </xs:key>
+        <xs:keyref name="mqtt-to-kinesis-aws-credential-profile-id-ref" refer="aws-credential-profile-id">
+            <xs:selector xpath="mqtt-to-kinesis-routes/mqtt-to-kinesis-route"/>
+            <xs:field xpath="aws-credential-profile-id"/>
+        </xs:keyref>
+    </xs:element>
+
+    <xs:complexType name="ConfigEntity">
+        <xs:all>
+            <xs:element name="internal" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="option" type="InternalOptionEntity" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="aws-credential-profiles" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="aws-credential-profile" type="AwsCredentialProfileEntity"
+                                    maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="mqtt-to-kinesis-routes" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mqtt-to-kinesis-route" type="MqttToKinesisRouteEntity" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="kinesis-to-mqtt-routes" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="kinesis-to-mqtt-route" type="KinesisToMqttRouteEntity" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="InternalOptionEntity">
+        <xs:all>
+            <xs:element name="key" type="xs:string"/>
+            <xs:element name="value" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="AwsCredentialProfileEntity">
+        <xs:all>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="profile-name" type="xs:string" minOccurs="0"/>
+            <xs:element name="profile-file" type="xs:string" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="MqttToKinesisRouteEntity">
+        <xs:all>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="enabled" type="xs:boolean" minOccurs="0" default="true"/>
+            <xs:element name="aws-credential-profile-id" type="xs:string" minOccurs="0"/>
+            <xs:element name="region" type="xs:string" minOccurs="0"/>
+            <xs:element name="mqtt-topic-filters">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mqtt-topic-filter" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="processor">
+                <xs:complexType>
+                    <xs:choice>
+                        <xs:element name="mapping" type="MqttToKinesisMappingEntity"/>
+                        <xs:element name="transformer" type="MqttToKinesisTransformerEntity"/>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="MqttToKinesisMappingEntity">
+        <xs:all>
+            <xs:element name="kinesis-streams">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="kinesis-stream" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="name" type="xs:string"/>
+                                    <xs:element name="partition-key">
+                                        <xs:complexType>
+                                            <xs:choice>
+                                                <xs:element name="random" type="RandomPartitionKeyTypeEntity"/>
+                                                <xs:element name="mqtt-topic" type="MqttTopicPartitionKeyTypeEntity"/>
+                                                <xs:element name="fixed" type="FixedPartitionKeyTypeEntity"/>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="explicit-hash-key" minOccurs="0">
+                                        <xs:complexType>
+                                            <xs:choice>
+                                                <xs:element name="random" type="RandomExplicitHashKeyTypeEntity"/>
+                                                <xs:element name="fixed" type="FixedExplicitHashKeyTypeEntity"/>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="RandomPartitionKeyTypeEntity"/>
+
+    <xs:complexType name="MqttTopicPartitionKeyTypeEntity"/>
+
+    <xs:complexType name="FixedPartitionKeyTypeEntity">
+        <xs:all>
+            <xs:element name="value" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="MqttToKinesisTransformerEntity">
+        <xs:all>
+            <xs:element name="implementation" type="xs:string"/>
+            <xs:element name="custom-settings" type="CustomSettings" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="KinesisToMqttRouteEntity">
+        <xs:all>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="enabled" type="xs:boolean" minOccurs="0" default="true"/>
+            <xs:element name="aws-credential-profile-id" type="xs:string" minOccurs="0"/>
+            <xs:element name="region" type="xs:string" minOccurs="0"/>
+            <xs:element name="kinesis-streams">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="kinesis-stream" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="tracing" minOccurs="0">
+                                        <xs:complexType>
+                                            <xs:all>
+                                                <xs:element name="sampling">
+                                                    <xs:complexType>
+                                                        <xs:all>
+                                                            <xs:element type="xs:boolean" name="enabled"/>
+                                                        </xs:all>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:all>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="name" type="xs:string"/>
+                                    <xs:element name="consumer-application-name" type="xs:string"/>
+                                    <xs:element name="consumer-retrieval-mode">
+                                        <xs:complexType>
+                                            <xs:choice>
+                                                <xs:element name="enhanced-fan-out"
+                                                            type="EnhancedFanOutRetrievalModeTypeEntity"/>
+                                                <xs:element name="polling" type="PollingRetrievalModeTypeEntity"/>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="processor">
+                <xs:complexType>
+                    <xs:choice>
+                        <xs:element name="mapping" type="KinesisToMqttMappingEntity"/>
+                        <xs:element name="transformer" type="KinesisToMqttTransformerEntity"/>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="KinesisToMqttMappingEntity">
+        <xs:all>
+            <xs:element name="mqtt-topics">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mqtt-topic" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="mqtt-publish-fields" type="MqttPublishFieldsEntity" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="KinesisToMqttTransformerEntity">
+        <xs:all>
+            <xs:element name="implementation" type="xs:string"/>
+            <xs:element name="custom-settings" type="CustomSettings" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="MqttPublishFieldsEntity">
+        <xs:all>
+            <xs:element name="retained-flag" type="xs:boolean" minOccurs="0" default="false"/>
+            <xs:element name="payload-format-indicator" type="PayloadFormat" minOccurs="0" default="UNSPECIFIED"/>
+            <xs:element name="message-expiry-interval" type="xs:int" minOccurs="0"/>
+            <xs:element name="response-topic" type="xs:string" minOccurs="0"/>
+            <xs:element name="correlation-data" type="xs:string" minOccurs="0"/>
+            <xs:element name="content-type" type="xs:string" minOccurs="0"/>
+            <xs:element name="qos" type="Qos" minOccurs="0" default="1"/>
+            <xs:element name="user-properties" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="user-property" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="name" type="xs:string"/>
+                                    <xs:element name="value" type="xs:string"/>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="RandomExplicitHashKeyTypeEntity"/>
+
+
+    <xs:complexType name="FixedExplicitHashKeyTypeEntity">
+        <xs:all>
+            <xs:element name="value" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+
+
+    <xs:complexType name="EnhancedFanOutRetrievalModeTypeEntity"/>
+
+    <xs:complexType name="PollingRetrievalModeTypeEntity"/>
+
+    <xs:simpleType name="Qos">
+        <xs:restriction base="xs:int">
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="PayloadFormat">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="UTF_8"/>
+            <xs:enumeration value="UNSPECIFIED"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="CustomSettings">
+        <xs:sequence>
+            <xs:element name="custom-setting" type="CustomSettingEntity" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CustomSettingEntity">
+        <xs:all>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="value" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+</xs:schema>

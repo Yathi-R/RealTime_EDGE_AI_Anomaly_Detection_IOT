@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="hivemq-data-lake-extension" type="ConfigEntity"/>
+
+    <xs:complexType name="ConfigEntity">
+        <xs:all>
+            <xs:element name="internal" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="option" type="InternalOptionEntity" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="aws-credential-profiles" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="aws-credential-profile" type="AwsCredentialProfileEntity"
+                                    maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="mqtt-to-s3-routes" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mqtt-to-s3-route" type="MqttToS3RouteEntity"
+                                    maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="azure-blob-storage-connections" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="azure-blob-storage-connection" type="AzureBlobStorageConnectionEntity"
+                                    maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="mqtt-to-azure-blob-storage-routes" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mqtt-to-azure-blob-storage-route" type="MqttToAzureBlobStorageRouteEntity"
+                                    maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="InternalOptionEntity">
+        <xs:all>
+            <xs:element name="key" type="nonEmptyString"/>
+            <xs:element name="value" type="nonEmptyString"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="AwsCredentialProfileEntity">
+        <xs:all>
+            <xs:element name="id" type="lowercaseId"/>
+            <xs:element name="profile-name" type="nonEmptyString" minOccurs="0"/>
+            <xs:element name="profile-file" type="nonEmptyString" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="AzureBlobStorageConnectionEntity">
+        <xs:all>
+            <xs:element name="id" type="lowercaseId"/>
+            <xs:element name="azure-blob-storage-endpoint" type="nonEmptyString" minOccurs="0"/>
+            <xs:element name="authentication">
+                <xs:complexType>
+                    <xs:choice>
+                        <xs:sequence>
+                            <xs:element type="nonEmptyString" name="connection-string"/>
+                        </xs:sequence>
+                        <xs:sequence>
+                            <xs:element name="microsoft-entra-id">
+                                <xs:complexType/>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="MqttToAzureBlobStorageRouteEntity">
+        <xs:all>
+            <xs:element name="id" type="lowercaseId"/>
+            <xs:element name="container" type="bucketName"/>
+            <xs:element name="file-name-template" type="nonEmptyString" minOccurs="0"/>
+            <xs:element name="azure-blob-storage-connection-id" type="nonEmptyString"/>
+            <xs:element name="enabled" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="mqtt-topic-filters">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mqtt-topic-filter" type="nonEmptyString" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="processor">
+                <xs:complexType>
+                    <xs:choice>
+                        <xs:element name="parquet" type="MqttToDataLakeParquetProcessorEntity"/>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="MqttToS3RouteEntity">
+        <xs:all>
+            <xs:element name="id" type="lowercaseId"/>
+            <xs:element name="bucket" type="bucketName"/>
+            <xs:element name="file-name-template" type="nonEmptyString" minOccurs="0"/>
+            <xs:element name="region" type="nonEmptyString" minOccurs="0"/>
+            <xs:element name="aws-credential-profile-id" minOccurs="0" type="xs:IDREF"/>
+            <xs:element name="enabled" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="mqtt-topic-filters">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="mqtt-topic-filter" type="nonEmptyString" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="processor">
+                <xs:complexType>
+                    <xs:choice>
+                        <xs:element name="parquet" type="MqttToDataLakeParquetProcessorEntity"/>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="MqttToDataLakeParquetProcessorEntity">
+        <xs:all>
+            <xs:element name="columns">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="column" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="name" type="nonEmptyString"/>
+                                    <xs:element name="value" type="columnValueEntity"/>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="file-metadata" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="metadata" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="key" type="nonEmptyString"/>
+                                    <xs:element name="value" type="nonEmptyString"/>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:simpleType name="columnValueEntity">
+        <xs:union memberTypes="allowedPlaceholdersEnum allowedPlaceholdersPattern"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="allowedPlaceholdersEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="mqtt-topic"/>
+            <xs:enumeration value="mqtt-payload"/>
+            <xs:enumeration value="mqtt-payload-utf8"/>
+            <xs:enumeration value="mqtt-retain"/>
+            <xs:enumeration value="mqtt-packet-id"/>
+            <xs:enumeration value="mqtt-payload-format-indicator"/>
+            <xs:enumeration value="mqtt-response-topic"/>
+            <xs:enumeration value="mqtt-correlation-data"/>
+            <xs:enumeration value="mqtt-correlation-data-utf8"/>
+            <xs:enumeration value="timestamp"/>
+            <xs:enumeration value="mqtt-user-properties"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="allowedPlaceholdersPattern">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="mqtt-user-properties\$.*"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="lowercaseId">
+        <xs:restriction base="xs:ID">
+            <xs:pattern value="[a-z0-9_-]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="bucketName">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z0-9][a-z0-9.-]{1,61}[a-z0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="nonEmptyString">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
